@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bandruf's Games | Play</title>
+</head>
+<body>
+    <div class="headerContainer">
+        <h1>Games</h1>
+    </div>
+    <div id="games">
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/retro--bowl/')">Retro Bowl</button>
+        <button class="game-button" onclick="create_iframe('ellisonleao.github.io/clumsy-bird/')">Clumsy Bird</button>
+        <button class="game-button" onclick="create_iframe('duckhuntjs.com/')">Duck Hunt</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/dinosaur-game/')">Chrome Dinosaur Game</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/astray/')">Astray</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/minecraft/')">MineKhan</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/BreakLock/')">BreakLock</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/Doodle-Jump/')">Doodle Jump</button>
+        <button class="game-button" onclick="create_iframe('bandruf.github.io/hextris/')">Hextris</button>
+    </div>
+    <div id="bottom-settings">
+        <button id="fullscreenButton" onclick="fullscreen()">Fullscreen</button>
+        <button id="home-button" onclick="destroy_frame()">Home</button>
+    </div>
+    <script src="iframecreate.js"></script>
+</body>
+</html> 
