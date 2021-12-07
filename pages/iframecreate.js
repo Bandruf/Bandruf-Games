@@ -2,10 +2,10 @@ let iframe_created = false;
 var frame = document.createElement("iframe");
 let headerContainer = document.querySelector(".headerContainer");
 let games = document.querySelector("#games")
+let gameButton = document.querySelectorAll(".game-button")
 
 //frame.width = 1200;
 //frame.height = 600;
-frame.classList.add("game_frame");
 
 function fullscreen() {
     if (frame.requestFullscreen) {
@@ -18,25 +18,15 @@ function fullscreen() {
   }
 
 function create_iframe(link){
+    frame.classList.add("frame")
     if (!iframe_created == true){
         frame.src = "https://"+link;
-
-        frame.scrolling = "no"
-        frame.style.marginLeft = "auto"
-        frame.style.marginRight = "auto"
-        frame.style.display = "flex"
-        frame.style.alignItems = "center"
-        frame.style.justifyContent = "center"
-        frame.style.flexWrap = "wrap"
-        frame.style.width = "95%"
-        frame.style.height = "80vh"
-
-        document.getElementById("bottom-settings").style.visibility = "visible"
-
+        // document.getElementById("bottom-settings").style.visibility = "visible"
+        gameButton.forEach(removeBtn => { 
+            removeBtn.style.display = "none"
+        })
         headerContainer.style.visibility= "hidden";
-        games.style.visibility = "hidden";
-
-        document.body.appendChild((frame));
+        games.appendChild(frame)
         iframe_created = true; 
     }
 }
