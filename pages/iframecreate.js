@@ -3,8 +3,9 @@ var frame = document.createElement("iframe");
 let headerContainer = document.querySelector(".headerContainer");
 let games = document.querySelector("#games")
 
-frame.width = 1200;
-frame.height = 600;
+//frame.width = 1200;
+//frame.height = 600;
+frame.classList.add("game_frame");
 
 function fullscreen() {
     if (frame.requestFullscreen) {
@@ -21,9 +22,14 @@ function create_iframe(link){
         frame.src = "https://"+link;
 
         frame.scrolling = "no"
-        frame.style.position = "absolute";
-        frame.style.left = "20%"
-        frame.style.top = "20%"
+        frame.style.marginLeft = "auto"
+        frame.style.marginRight = "auto"
+        frame.style.display = "flex"
+        frame.style.alignItems = "center"
+        frame.style.justifyContent = "center"
+        frame.style.flexWrap = "wrap"
+        frame.style.width = "95%"
+        frame.style.height = "80vh"
 
         document.getElementById("bottom-settings").style.visibility = "visible"
 
