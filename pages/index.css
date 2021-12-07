@@ -73,3 +73,9 @@ h1{
 button:hover{
     cursor: pointer;
 }
+
+.frame { 
+    width: 95%;
+    height: 80vh;
+
+}
