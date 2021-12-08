@@ -22,10 +22,13 @@ function create_iframe(link){
     if (!iframe_created == true){
         frame.src = "https://"+link;
         // document.getElementById("bottom-settings").style.visibility = "visible"
+
         gameButton.forEach(removeBtn => { 
             removeBtn.style.display = "none"
         })
+
         headerContainer.style.visibility= "hidden";
+        document.getElementById("bottom-settings").style.visibility = "visible"
         games.appendChild(frame)
         iframe_created = true; 
     }
@@ -34,7 +37,11 @@ function create_iframe(link){
 function destroy_frame(){
     if (iframe_created == true) {
         headerContainer.style.visibility= "visible";
-        games.style.visibility = "visible";
+
+        gameButton.forEach(removeBtn => { 
+            removeBtn.style.display = "block"
+        })
+
         document.getElementById("bottom-settings").style.visibility = "hidden"
         frame.remove();
         iframe_created = false;
