@@ -29,13 +29,14 @@ h1{
 }
 
 .game-button{ 
-    width: 10vh;
+    width: 13vh;
     height: 5vh;
     cursor: pointer;
     font-weight: bold;
     background-color: rgb(56, 52, 52);
     color: rgb(240, 230, 230);
     border: 2px solid black;
+    word-wrap: break-word;
 }
 
 #fullscreenButton{
@@ -66,8 +67,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     visibility: hidden;
+    gap: 15px;
 }
 
 button:hover{
