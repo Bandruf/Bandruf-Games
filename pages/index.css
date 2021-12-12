@@ -28,15 +28,54 @@ h1{
     flex-wrap: wrap;
 }
 
+#game-frame{
+    width: 95%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.holder{
+    display: flex;
+    background-color: rgb(46, 44, 44);
+    width: 10%;
+    height: 20vh;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px black;
+}
+
+.game-image{
+    width: 85%;
+    height: 14vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .game-button{ 
-    width: 13vh;
-    height: 5vh;
+    width: 85%;
+    height: 3.8vh;
     cursor: pointer;
+    margin-top: auto;
+    border-radius: 5px;
     font-weight: bold;
     background-color: rgb(56, 52, 52);
     color: rgb(240, 230, 230);
     border: 2px solid black;
     word-wrap: break-word;
+    margin-bottom: 5px;
 }
 
 #fullscreenButton{
