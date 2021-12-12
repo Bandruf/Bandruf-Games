@@ -3,6 +3,7 @@ var frame = document.createElement("iframe");
 let headerContainer = document.querySelector(".headerContainer");
 let games = document.querySelector("#games")
 let gameButton = document.querySelectorAll(".game-button")
+let holder = document.querySelectorAll(".holder")
 
 //frame.width = 1200;
 //frame.height = 600;
@@ -23,7 +24,7 @@ function create_iframe(link){
         frame.src = "https://"+link;
         // document.getElementById("bottom-settings").style.visibility = "visible"
 
-        gameButton.forEach(removeBtn => { 
+        holder.forEach(removeBtn => { 
             removeBtn.style.display = "none"
         })
 
@@ -38,8 +39,8 @@ function destroy_frame(){
     if (iframe_created == true) {
         headerContainer.style.visibility= "visible";
 
-        gameButton.forEach(removeBtn => { 
-            removeBtn.style.display = "block"
+        holder.forEach(removeBtn => { 
+            removeBtn.style.display = "flex"
         })
 
         document.getElementById("bottom-settings").style.visibility = "hidden"
