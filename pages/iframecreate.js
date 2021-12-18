@@ -1,4 +1,5 @@
 let iframe_created = false;
+let games_played = 0
 var frame = document.createElement("iframe");
 let headerContainer = document.querySelector(".headerContainer");
 let games = document.querySelector("#games")
@@ -21,6 +22,8 @@ function fullscreen() {
 function create_iframe(link){
     frame.classList.add("frame")
     if (!iframe_created == true){
+        games_played = games_played + 1;
+        console.log(games_played)
         frame.src = "https://"+link;
         // document.getElementById("bottom-settings").style.visibility = "visible"
 
@@ -28,7 +31,7 @@ function create_iframe(link){
             removeBtn.style.display = "none"
         })
 
-        headerContainer.style.visibility= "hidden";
+        //headerContainer.style.visibility= "hidden";
         document.getElementById("bottom-settings").style.visibility = "visible"
         games.appendChild(frame)
         iframe_created = true; 
@@ -37,7 +40,7 @@ function create_iframe(link){
 
 function destroy_frame(){
     if (iframe_created == true) {
-        headerContainer.style.visibility= "visible";
+        //headerContainer.style.visibility= "visible";
 
         holder.forEach(removeBtn => { 
             removeBtn.style.display = "flex"
