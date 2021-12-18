@@ -8,9 +8,17 @@
     <title>Bandruf's Games | Play</title>
 </head>
 <body>
+    <!--
     <div class="headerContainer">
-        <h1>Games</h1>
+        <button id="burger-button">
+            <img id="burger-img" src="hamburger.png">
+        </button>
+        <div id="menu">
+            <button>My Game List</button>
+        </div>
     </div>
+    -->
+
     <div id="games">
         <div class="holder">
             <img class="game-image" src="images/rb.jpg">
@@ -93,10 +101,19 @@
             <img class="game-image" src="images/fued.jpg">
             <button class="game-button" onclick="create_iframe('script.google.com/macros/s/AKfycbwsZ8H_YdcS9zu7gsGcgpY67QDa94RpbNL4OH0OlPvuunzwiNGd/exec')">Google Fued</button>
         </div>
+        <div class="holder">
+            <img class="game-image" src="images/wheelie-challenge-2-game.png">
+            <button class="game-button" onclick="create_iframe('script.google.com/macros/s/AKfycbzNSwtKXjTyHdQaHz2NZIIdWjc61GWuX86FAa2TwJZICvDc9wk/exec')">Wheelie Bike</button>
+        </div>
+        <div class="holder">
+            <img class="game-image" src="images/geometry-neon-dash-game.png">
+            <button class="game-button" onclick="create_iframe('script.google.com/macros/s/AKfycbzTzTK_AZkEg-fdreQUOgkPtqUljp2NGULqWeFKBYoG0yMnHQ/exec')">Geometry Neon Dash</button>
+        </div>
     </div>
     <div id="bottom-settings">
-        <button id="fullscreenButton" onclick="fullscreen()">Fullscreen</button>
-        <button id="home-button" onclick="destroy_frame()">Home</button>
+        <button class="setting" onclick="fullscreen()">Fullscreen</button>
+        <button class="setting" onclick="destroy_frame()">Home</button>
+        <!--<button class="setting">Add To Game List</button>-->
     </div>
     <script src="iframecreate.js"></script>
 </body>
