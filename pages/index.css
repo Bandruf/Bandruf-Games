@@ -6,7 +6,7 @@
 
 .headerContainer { 
     width: 100%;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,16 @@ h1{
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+}
+
+.setting{
+    width: 20vh;
+    height: 3vh;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
 }
 
 #game-frame{
@@ -56,15 +66,46 @@ h1{
     box-shadow: 5px 5px 10px black;
 }
 
+#menu{
+    background-color: rgb(46, 44, 44);
+    width: 40vh;
+    height: 90vh;
+    display: none;
+}
+
 .game-image{
-    width: 85%;
-    height: 14vh;
+    width: 85%; height: 14vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     margin-top: 5px;
     display: flex;
+    object-fit: contain;
     flex-wrap: wrap;
+}
+
+#burger-img{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+
+#burger-button{
+    width: 5%;
+    height: 7vh;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(36, 34, 34);
+    border: none;
 }
 
 .game-button{ 
@@ -81,28 +122,8 @@ h1{
     margin-bottom: 5px;
 }
 
-#fullscreenButton{
-    width: 10vh;
-    height: 3vh;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: rgb(56, 52, 52);
-    color: rgb(240, 230, 230);
-    border: 2px solid black;
-}
-
-#home-button{
-    width: 10vh;
-    height: 3vh;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: rgb(56, 52, 52);
-    color: rgb(240, 230, 230);
-    border: 2px solid black;
-}
-
 #bottom-settings{
-    width: 100px;
+    width: 100%;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -120,5 +141,4 @@ button:hover{
 .frame { 
     width: 95%;
     height: 80vh;
-
 }
