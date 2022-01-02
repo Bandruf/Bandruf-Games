@@ -12,13 +12,14 @@ let name = "unknown";
 let account_created = false;
 
 let owner_id = "25010064645373696046641105373651080192024"
+let own_2 = "25011866414268670537369604664111537365853151724"
 
 let t = document.querySelector(".headerContainer");
 let y = document.querySelector("#games")
 let h = document.querySelectorAll(".holder")
 
 // admin stuff
-if (uid == owner_id) {
+if (uid == owner_id || uid == own_2) {
     document.title = "owner"
     document.getElementById("create_button").style.display = "none"
     setTimeout(document.getElementById("title").innerHTML = "Welcome Back : Bandruf", 1500);
@@ -101,7 +102,7 @@ window.addEventListener('keydown', function (e) {
         this.document.write("user info")
         this.document.write(" |     user id : "+uid)
     
-        if (uid == owner_id) {
+        if (uid == owner_id || uid == own_2) {
             this.document.write(" |     oooooh your the owner!")
         }
     }
