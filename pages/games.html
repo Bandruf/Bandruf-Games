@@ -10,6 +10,7 @@
 <body>
     <div class="headerContainer">
          <h1 id="title">Bandruf Games</h1> 
+         <button onclick="create_account()" id="create_button">Create Account</button>
         <!--<button id="panic-button" onclick="show()">Panic Settings</button>-->
     </div>
 
@@ -134,6 +135,14 @@
             <img class="game-image" src="images/228454_2.jpg">
             <button class="game-button" onclick="create_iframe('script.google.com/macros/s/AKfycbxHGjinyF8a754fOQFShH17Ti4rYlTyGBRONth86eB0PS-3VfZw/exec')">Football Legends 2019</button>
         </div>
+        <div class="holder">
+            <img class="game-image" src="images/launch.png">
+            <button class="game-button" onclick="create_iframe('moyaimoment.github.io/games/burrito/')">Burrito Bison Launcha Libre</button>
+        </div>
+        <div class="holder">
+            <img class="game-image" src="images/park-my-car-2.jpg">
+            <button class="game-button" onclick="create_iframe('moyaimoment.github.io/games/park-the-car/')">Park The Car</button>
+        </div>
     </div>
     <div id="bottom-settings">
         <button class="setting" onclick="fullscreen()">Fullscreen</button>
@@ -149,6 +158,20 @@
         <button onclick="set(stringtxt.value,link.value)">Submit</button>
     </div>
 
+    <div id="username-frame">
+        <div id="user-hold">
+            <form class="form-c">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Enter Username" name="user" required>
+                <div id="buttons">
+                    <button id="submit-button" onclick="set_name_5(user.value)">Submit</button>
+                    <button id="back-c">Home</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <a id="discord-link"href="https://discord.gg/Q7HRpcMgYd">Join our Discord</a>
     <script src="panic.js"></script>
     <script src="iframecreate.js"></script>
     <script src="scripts/indentify.js"></script>
