@@ -28,7 +28,7 @@ function create_iframe(link){
         console.log(games_played)
         frame.src = "https://"+link;
         console.log(frame.src)
-        document.getElementById("bottom-settings").style.visibility = "visible"
+        //document.getElementById("bottom-settings").style.visibility = "visible"
 
         holder.forEach(removeBtn => { 
             console.log(removeBtn)
@@ -44,7 +44,7 @@ function create_iframe(link){
 
 function destroy_frame(){
     if (iframe_created == true) {
-        headerContainer.style.visibility= "visible";
+        //headerContainer.style.visibility= "visible";
 
         holder.forEach(removeBtn => { 
             removeBtn.style.display = "flex"
