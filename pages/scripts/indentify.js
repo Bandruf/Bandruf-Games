@@ -1,17 +1,19 @@
-var navigator_info = window.navigator;
-var screen_info = window.screen;
-var uid = navigator_info.mimeTypes.length;
-uid += navigator_info.userAgent.replace(/\D+/g, '');
-uid += navigator_info.plugins.length;
-uid += screen_info.height || '';
-uid += screen_info.width || '';
-uid += screen_info.pixelDepth || '';
-console.log(uid);
+var uid = Math.random(1,99999999999999999)
+console.log("Not LS : "+uid);
+
+if (localStorage.getItem("id") == null) {
+    if (uid != owner_id || uid != own_2) {
+        localStorage.setItem('id',uid)
+    }
+} else {
+    uid = localStorage.getItem('id')
+    console.log("LS + "+localStorage.getItem('id'))
+}
 
 let name = "unknown";
 let account_created = false;
 
-let owner_id = "25010064645373696046641105373651080192024"
+let owner_id = "0.5739048132123785"
 let own_2 = "25011866414268670537369604664111537365853151724"
 
 let t = document.querySelector(".headerContainer");
@@ -19,8 +21,8 @@ let y = document.querySelector("#games")
 let h = document.querySelectorAll(".holder")
 
 // admin stuff
-if (uid == owner_id || uid == own_2) {
-    document.title = "Sorry!"
+if (localStorage.getItem('id') == owner_id || localStorage.getItem('id') == own_2) {
+    document.title = "Bandruf"
     document.getElementById("create_button").style.display = "none"
     setTimeout(document.getElementById("title").innerHTML = "Welcome Back : Bandruf", 1500);
 }
@@ -52,7 +54,7 @@ function change_title(){
         embeds: [
             { "color": 7506394, // Decimal Color [ Blue ]
             "title": "New Login, Name = "+localStorage.getItem("name"),
-            "description": "UID : "+uid
+            "description": "UID : "+local_uid
             }]
                 }
                 request.send(JSON.stringify(params));
@@ -102,8 +104,10 @@ window.addEventListener('keydown', function (e) {
         this.document.write("user info")
         this.document.write(" |     user id : "+uid)
     
-        if (uid == owner_id || uid == own_2) {
-            this.document.write(" |     oooooh your the owner!")
+        if (localStorage.getItem('id') == owner_id || localStorage.getItem('id') == own_2) {
+            this.document.write(" | Rank : Creator")
+        } else {
+            this.document.write("| Rank : User")
         }
     }
 }, false);
