@@ -20,7 +20,7 @@ let h = document.querySelectorAll(".holder")
 
 // admin stuff
 if (uid == owner_id || uid == own_2) {
-    document.title = "owner"
+    document.title = "Sorry!"
     document.getElementById("create_button").style.display = "none"
     setTimeout(document.getElementById("title").innerHTML = "Welcome Back : Bandruf", 1500);
 }
