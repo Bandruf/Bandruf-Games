@@ -2,6 +2,7 @@ let iframe_created = false;
 let games_played = 0
 let current_game = ""
 var frame = document.createElement("iframe");
+frame.classList.add("gameiframe)
 frame.scroll = false
 let headerContainer = document.querySelector(".headerContainer");
 let games = document.querySelector("#games")
