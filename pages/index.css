@@ -8,15 +8,33 @@
     width: 100%;
     height: 6vh;
     display: flex;
+    position: sticky;
     justify-content: center;
     gap: 10px;
     align-items: center;
     background-color: rgb(36, 34, 34)
 }
 
-.gameiframe{
-    border-radius: 3px;
+#indexpages{
+    position: sticky;
+    bottom: 122px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(36, 34, 34)
 }
+
+.indexPagesContainer { 
+    background-color: rgb(36, 34, 34);
+    width: 100%;
+    height: 50px;  
+    position: absolute;
+    top: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
 
 #fake_frame{
     position: fixed;
@@ -93,9 +111,22 @@ h1{
     color: rgb(240, 230, 230);
 }
 
-#games { 
+#page-count{
+    background-color: transparent;
+    font-size: 100%;
+    width: 100%;
+    height: 5vh;
+}
+
+#page-count-container{
+    width: 35%;
+    height: 5vh;
+    background-color: red;
+}
+
+.page { 
     width: 77%;
-    height: 78vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -103,6 +134,20 @@ h1{
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    display: none;
+}
+
+.game-holder { 
+    width: 77%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: none;
 }
 
 .setting{
@@ -296,4 +341,11 @@ input[type=text], input[type=password] {
 .frame { 
     width: 95%;
     height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.rom {
+    width: 40%;
+    height: 58vh;
 }
