@@ -1,4 +1,4 @@
-let downtime = false
+let downtime = true
 let ff = document.querySelectorAll(".holder")
 let hh = document.querySelector(".headerContainer")
 
