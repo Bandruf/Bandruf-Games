@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>LMAO-BEST|Play</title>
+</head>
+<body>
+    <div class="headerContainer">
+         <h1 id="title">Bandruf Games</h1> 
+         <button onclick="create_account()" id="create_button">Create Account</button>
+        <!--<button id="panic-button" onclick="show()">Panic Settings</button>-->
+    </div>
+
+    <div id="games"></div>
+
+    <div id="bottom-settings">
+        <button class="setting" onclick="fullscreen()">Fullscreen</button>
+        <button class="setting" onclick="destroy_frame()">Home</button>
+    </div>
+
+    <div id="setting-form">
+        <h1>Panic Button : "="</h1>
+        <label for="stringtxt">Tab Title :</label>
+        <input type="text" id="stringtxt" name="stringtxt"><br><br>
+        <label for="link">Link :</label>
+        <input type="text" id="link" name="link"><br><br>
+        <button onclick="set(stringtxt.value,link.value)">Submit</button>
+    </div>
+
+    <div id="username-frame">
+        <div id="user-hold">
+            <form class="form-c">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Enter Username" name="user" required>
+                <div id="buttons">
+                    <button id="submit-button" onclick="set_name_5(user.value)">Submit</button>
+                    <button id="back-c">Home</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <a id="discord-link"href="https://discord.gg/Q7HRpcMgYd">Join our Discord</a>
+    <script src="create.js"></script>
+</body>
+</html> 

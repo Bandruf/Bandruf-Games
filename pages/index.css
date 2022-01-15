@@ -1,0 +1,351 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(68, 64, 64);
+}
+
+.headerContainer { 
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(36, 34, 34)
+}
+
+#indexpages{
+    position: sticky;
+    bottom: 122px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(36, 34, 34)
+}
+
+.indexPagesContainer { 
+    background-color: rgb(36, 34, 34);
+    width: 100%;
+    height: 50px;  
+    position: absolute;
+    top: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#fake_frame{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
+}
+
+#uname{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#username-frame{
+    width: 95%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#user-hold{
+    width: 20%;
+    height: 30vh;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    background-color: rgb(36, 34, 34)
+}
+
+#create_button{
+    height: 80%;
+    border-radius: 5px;
+    color: rgb(240, 230, 230);
+    background-color: rgb(46, 44, 44);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+h1{
+    color: rgb(240, 230, 230);
+    background-color: rgb(46, 44, 44);
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#setting-form{
+    display: none;
+}
+
+#home-button-top{
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+    width: 10%;
+    font-size: 100%;
+    color: rgb(240, 230, 230);
+    background-color: rgb(36, 34, 34)
+}
+
+#games-count{
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: rgb(240, 230, 230);
+}
+
+#page-count{
+    background-color: transparent;
+    font-size: 100%;
+    width: 100%;
+    height: 5vh;
+}
+
+#page-count-container{
+    width: 35%;
+    height: 5vh;
+    background-color: red;
+}
+
+.page { 
+    width: 77%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.game-holder { 
+    width: 77%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.setting{
+    width: 20vh;
+    height: 3vh;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+}
+
+#game-frame{
+    width: 95%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.holder{
+    display: flex;
+    background-color: rgb(46, 44, 44);
+    width: 10%;
+    height: 20vh;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px black;
+}
+
+a{
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#menu{
+    visibility: hidden;
+    background-color: rgb(46, 44, 44);
+    width: 40%;
+    height: 50vh;
+    margin-left: auto;
+    margin-top: 50%;
+    z-index: 3;
+    border: 5px solid black;
+}
+
+.game-image{
+    width: 85%; height: 14vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+#burger-img{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    object-fit: contain;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+#burger-button{
+    width: 5%;
+    height: 7vh;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(36, 34, 34);
+    border: none;
+    z-index: 3;
+}
+
+.game-button{ 
+    width: 85%;
+    height: 3.8vh;
+    cursor: pointer;
+    margin-top: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+button{
+    cursor: pointer;
+    margin-top: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+#close-button{
+    width: 30px;
+    margin-left: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+#panic-button{
+    width: 10%;
+    height: 4vh;
+    color: rgb(240, 230, 230);
+    background-color: rgb(46, 44, 44);
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 100%;
+}
+
+#bottom-settings{
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    gap: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.setting:hover{
+    width: 22vh;
+}
+
+.form-c #UserP{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+input[type=text], input[type=password] {
+    width: 70%;
+    height: 2vh;
+    padding: 5px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    display: flex;
+    background: #f1f1f1;
+  }
+
+#buttons{
+    width: 100%;
+    height: 10%;
+    margin-top: 7%;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.form-c{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.frame { 
+    width: 95%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.rom {
+    width: 40%;
+    height: 58vh;
+}
