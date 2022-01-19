@@ -354,40 +354,43 @@ function fullscreen() {
   }
 
 function change_page(bof){
-    if (bof == "+") {
-        document.getElementById("pg"+current_page).style.display = "none"
-        current_page += 1
-    } else {
-        document.getElementById("pg"+current_page).style.display = "none"
-        current_page -= 1
-    }
-
-    destroy_frame()
-
-    if (!document.getElementById("pg"+current_page)) {
-        console.log("change page script : "+current_page)
-
-        if (document.getElementById("page-count")) {
-            document.getElementById("page-count").innerHTML = "Page : "+current_page
+        if (bof == "+") {
+            document.getElementById("pg"+current_page).style.display = "none"
+            current_page += 1
+        } else {
+            document.getElementById("pg"+current_page).style.display = "none"
+            current_page -= 1
         }
     
-        let new_page = document.createElement("div")
-        new_page.id = "pg"+current_page
-        new_page.classList.add("page")
-        console.log("213 : "+current_page)
-    
-        games.map(function(p){
-            console.log(p.viewed_on,p.gamename)
-            if (p.viewed_on == current_page) {
-                new_page.style.display = "flex"
-                document.getElementById(p.gamename).style.display = "flex"
-                new_page.appendChild(document.getElementById(p.gamename))
+        destroy_frame()
+
+        games.map(function(o){
+            if (!o.viewed_on == current_page) {
+                document.getElementById(o.gamename).style.display = "none"
             }
         })
-        document.body.appendChild(new_page)
-    } else{
-        document.getElementById("pg"+current_page).style.display = "flex"
-    }
+    
+        if (!document.getElementById("pg"+current_page)) {
+    
+                if (document.getElementById("page-count")) {
+                    document.getElementById("page-count").innerHTML = "Page : "+current_page
+                }
+            
+                let new_page = document.createElement("div")
+                new_page.id = "pg"+current_page
+                new_page.classList.add("page")
+            
+                games.map(function(p){
+                    if (p.viewed_on == current_page) {
+                        new_page.style.display = "flex"
+                        document.getElementById(p.gamename).style.display = "flex"
+                        new_page.appendChild(document.getElementById(p.gamename))
+                    }
+                })
+                document.body.appendChild(new_page)
+            } else{
+                document.getElementById("pg"+current_page).style.display = "flex"
+        }
 }
 
 frame.classList.add("frame")
