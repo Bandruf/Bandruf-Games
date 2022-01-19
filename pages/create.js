@@ -13,7 +13,7 @@ const games = [
     {
         gamename: "Retro Bowl",
         gameIMG: "images/rb.jpg",
-        link: "moyaimoment.github.io/games/retro-bowl/",
+        link: "3kh0.github.io/retro-bowl/",
         viewed_on: 0,
         genre: "Sports"
     },
