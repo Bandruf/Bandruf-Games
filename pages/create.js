@@ -470,6 +470,10 @@ function u(i){
     }
 }
 
+function change_doct(){
+    window.location.href = "fun/fun.html"
+}
+
 document.getElementById("nextPage").addEventListener("click", function() {
     if (current_page != all_pages) {
         change_page("+")
