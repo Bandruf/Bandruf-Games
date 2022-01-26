@@ -471,7 +471,7 @@ function u(i){
 }
 
 function change_doct(){
-    window.location.href = "fun/fun.html"
+    window.location.href = "Fun/fun.html"
 }
 
 document.getElementById("nextPage").addEventListener("click", function() {
