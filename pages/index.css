@@ -23,6 +23,14 @@
     background-color: rgb(36, 34, 34)
 }
 
+#tools{
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 10%;
+    height: 5vh;
+}
+
 .indexPagesContainer { 
     background-color: rgb(36, 34, 34);
     width: 100%;
