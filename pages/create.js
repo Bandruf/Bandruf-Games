@@ -1,14 +1,3 @@
-let iframe_created = false;
-let pages = 0
-let all_pages = 3
-let current_page = 1
-let games_created = 0
-let games_played = 0
-let current_game = ""
-var frame = document.createElement("iframe");
-frame.scroll = false
-let headerContainer = document.querySelector(".headerContainer");
-
 const games = [
     {
         gamename: "Retro Bowl",
@@ -56,7 +45,7 @@ const games = [
     {
         gamename: "Doodle Jump",
         gameIMG : "images/dood.jpg",
-        link: "bandruf.github.io/Doodle-Jump/"   ,
+        link: "htmlgames.github.io/htmlgames/differences/jump/index.html"   ,
         viewed_on: 0,                genre: "Endless"
     },
     {
@@ -188,14 +177,23 @@ const games = [
     {
         gamename: "FNAF-2",
         gameIMG : "images/fnaf2.png",
-        link: "scratch.mit.edu/projects/466964675/embed"   ,
-        viewed_on: 0,                genre: "Horror"
+        link: "fnaf2.html"   ,
+        viewed_on: 0,                genre: "Horror",
+        hardcoded:"true"
     },
     {
         gamename: "FNAF-3",
         gameIMG : "images/fnaf3.png",
-        link: "scratch.mit.edu/projects/431671044/embed"   ,
-        viewed_on: 0,                genre: "Horror"
+        link: "fnaf3.html"   ,
+        viewed_on: 0,                genre: "Horror",
+        hardcoded:"true"
+    },
+    {
+        gamename: "FNAF 4",
+        gameIMG : "images/Fnaf_4_desktop_icon.jpg",
+        link: "fnaf4.html"   ,
+        viewed_on: 0,
+        genre: "Horror",hardcoded:"true"
     },
     {
         gamename: "Cookie Clicker",
@@ -339,10 +337,32 @@ const games = [
         viewed_on: 0,
         genre: "Horror"
     },
+    {
+        gamename: "Gore Script",
+        gameIMG : "images/unnamed (1).jpg",
+        link: "gorescript.github.io/classic/play/"   ,
+        viewed_on: 0,
+        genre: "Shooter"
+    },
 ]
+
+// varibles
+let iframe_created = false;
+let pages = 0
+let time_on = 0
+let all_pages = 3
+let current_page = 1
+let games_created = 0
+let games_played = 0
+let current_game = ""
+let headerContainer = document.querySelector(".headerContainer");
+var frame = document.createElement("iframe");
+frame.scroll = false
+// end
 
 let pageIndex = 1
 
+// fullscreen ):
 function fullscreen() {
     if (frame.requestFullscreen) {
         frame.requestFullscreen();
@@ -353,7 +373,9 @@ function fullscreen() {
     }
   }
 
+// main change function
 function change_page(bof){
+        // changes page var
         if (bof == "+") {
             document.getElementById("pg"+current_page).style.display = "none"
             current_page += 1
@@ -363,23 +385,19 @@ function change_page(bof){
         }
     
         destroy_frame()
-
-        games.map(function(o){
-            if (!o.viewed_on == current_page) {
-                document.getElementById(o.gamename).style.display = "none"
-            }
-        })
     
         if (!document.getElementById("pg"+current_page)) {
     
                 if (document.getElementById("page-count")) {
                     document.getElementById("page-count").innerHTML = "Page : "+current_page
                 }
-            
+                
+                // 'create' new page
                 let new_page = document.createElement("div")
                 new_page.id = "pg"+current_page
                 new_page.classList.add("page")
-            
+                
+                // make games on the page visible
                 games.map(function(p){
                     if (p.viewed_on == current_page) {
                         new_page.style.display = "flex"
@@ -391,42 +409,71 @@ function change_page(bof){
             } else{
                 document.getElementById("pg"+current_page).style.display = "flex"
         }
+
+        
+        // fix
+        games.map(function(i){
+            if (i.viewed_on != current_page) {
+                document.getElementById(i.gamename).style.display = "none"
+            }
+        })
 }
+// end
 
 frame.classList.add("frame")
 
+// start of iframe
 function create_iframe(link,r){
     let page234242 = document.querySelector(".game-holder")
     let gameButton = document.querySelectorAll(".game-button")
     let holder = document.querySelectorAll(".holder")
 
     if (!iframe_created == true){
-        page234242.style.display = "flex"
-        games_played = games_played + 1;
-        frame.src = "https://"+link;
-        //document.getElementById("bottom-settings").style.visibility = "visible"
-
-        holder.forEach(removeBtn => { 
-            removeBtn.style.display = "none"
-        })
-
-        //headerContainer.style.visibility= "hidden";
-        document.getElementById("bottom-settings").style.display = "flex"
-        page234242.appendChild(frame)
-        iframe_created = true; 
+        if (r) {
+            page234242.style.display = "flex"
+            games_played = games_played + 1;
+            frame.src = link
+    
+            holder.forEach(removeBtn => { 
+                removeBtn.style.display = "none"
+            })
+    
+            document.getElementById("bottom-settings").style.display = "flex"
+            page234242.appendChild(frame)
+            iframe_created = true;  
+        } else {
+            page234242.style.display = "flex"
+            games_played = games_played + 1;
+            frame.src = "https://"+link;
+    
+            holder.forEach(removeBtn => { 
+                removeBtn.style.display = "none"
+            })
+    
+            document.getElementById("bottom-settings").style.display = "flex"
+            page234242.appendChild(frame)
+            iframe_created = true; 
+        }
     }
+}
+
+function check(){
+    games.map(function(vrf){
+        if (vrf.viewed_on == current_page) {
+            document.getElementById(vrf.gamename).style.display = "flex"
+        } else {
+            document.getElementById(vrf.gamename).style.display = "none"
+        }
+    })
 }
 
 function destroy_frame(){
     let gameButton = document.querySelectorAll(".game-button")
     let holder = document.querySelectorAll(".holder")
+    check()
 
     if (iframe_created == true) {
         //headerContainer.style.visibility= "visible";
-
-        holder.forEach(removeBtn => { 
-            removeBtn.style.display = "flex"
-        })
 
         document.getElementById("bottom-settings").style.display = "none"
         frame.remove();
@@ -435,22 +482,25 @@ function destroy_frame(){
 }
 // end of iframe
 
-
-
+let count = 0
 
 function u(i){
     i.viewed_on = pageIndex
+
+    // div create
     let div = document.createElement("div")
     div.id = i.gamename
     div.classList.add("holder")
     let div_game_name = document.createElement("button")
     div_game_name.innerHTML = i.gamename
     div_game_name.classList.add("game-button")
+    //
 
     div_game_name.onclick = function() {
-        create_iframe(i.link,i.rom_game)
+        create_iframe(i.link,i.hardcoded)
     };
 
+    // create game image
     let image = document.createElement("img")
     image.classList.add("game-image")
     image.src = i.gameIMG
@@ -459,10 +509,20 @@ function u(i){
     document.getElementById("pg"+current_page).appendChild(div)
     games_created += 1
 
+    image.onclick = function(){
+        create_iframe(i.link,i.hardcoded)
+    }
+    //
+
+    count++
+    document.getElementById("games-count").innerHTML = count+" Games Available"
+
+    // hide the div its not on the right page
     if (i.viewed_on != current_page) {
         div.style.display = "none"
     }
 
+    // checks if games are more than 25 if it is then makes a new page
     if (games_created > 25){
         pages += 1
         pageIndex += 1
@@ -470,32 +530,38 @@ function u(i){
     }
 }
 
+// change to fun tools
 function change_doct(){
-    window.location.href = "Fun/fun.html"
+    window.location.href = "fun/fun.html"
 }
 
+// change page positive
 document.getElementById("nextPage").addEventListener("click", function() {
     if (current_page != all_pages) {
         change_page("+")
     }
 });
 
+// change page negative
 document.getElementById("previousPage").addEventListener("click", function() {
     if (current_page > 1) {
         change_page("-")
     }
 });
 
+// create all games from const
 games.map(function(i){
     u(i)
 })
 
+// visit counter with ':'
 window.addEventListener('keydown', function (e) {
     if (e.key == ":") {
         window.location.href = "visitcounter.html"
     }
 }, false);
 
+// if page is equal to one find page 1 and set it to visible
 if (current_page == 1) {
     document.getElementById("pg"+current_page).style.display = "flex"
 }
