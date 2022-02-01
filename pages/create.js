@@ -429,22 +429,34 @@ function create_iframe(link,r){
     let holder = document.querySelectorAll(".holder")
 
     if (!iframe_created == true){
-        if (r) {
-            page234242.style.display = "flex"
-            games_played = games_played + 1;
-            frame.src = link
-    
+        if (r == "true") {
             holder.forEach(removeBtn => { 
                 removeBtn.style.display = "none"
             })
-    
-            document.getElementById("bottom-settings").style.display = "flex"
-            page234242.appendChild(frame)
-            iframe_created = true;  
+
+            let download = document.createElement('a')
+            download.id = "download"
+            download.innerHTML = "This games file was to big to host. So you have to download it play it(click me to download it)"
+            if (link == "fnaf2.html") {
+                download.href = "https://drive.google.com/file/d/1tmmhUDU0_GFjtagrRxWL3Oa7kEy4rsX2/view?usp=sharing"
+            }
+            if (link == "fnaf3.html") {
+                download.href = "https://drive.google.com/file/d/1oKIxAolpAysCZFaCimhJa3XWN7OEKo_7/view?usp=sharing"
+            }
+            if (link == "fnaf4.html") {
+                download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
+            }
+
+            document.body.appendChild(download)
         } else {
             page234242.style.display = "flex"
             games_played = games_played + 1;
-            frame.src = "https://"+link;
+
+            if (!r) {
+                frame.src = "https://"+link;
+            } else {
+                frame.src = link
+            }
     
             holder.forEach(removeBtn => { 
                 removeBtn.style.display = "none"
@@ -478,6 +490,10 @@ function destroy_frame(){
         document.getElementById("bottom-settings").style.display = "none"
         frame.remove();
         iframe_created = false;
+
+        if (document.getElementById("download")){
+            document.getElementById("download").remove()
+        }
     }
 }
 // end of iframe
