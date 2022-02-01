@@ -23,6 +23,14 @@
     background-color: rgb(36, 34, 34)
 }
 
+#games-count{
+    position: absolute;
+    left: 0;
+    right: auto;
+    width: 15%;
+    height: 5vh;
+}
+
 #tools{
     position: absolute;
     left: auto;
@@ -88,6 +96,10 @@
     border: 2px solid black;
 }
 
+a {
+    color: rgb(54, 51, 51);
+}
+
 h1{
     color: rgb(240, 230, 230);
     background-color: rgb(46, 44, 44);
@@ -129,7 +141,6 @@ h1{
 #page-count-container{
     width: 35%;
     height: 5vh;
-    background-color: red;
 }
 
 .page { 
@@ -259,6 +270,7 @@ a{
     color: rgb(240, 230, 230);
     border: 2px solid black;
     word-wrap: break-word;
+    overflow:hidden;
     margin-bottom: 5px;
 }
 
@@ -313,6 +325,10 @@ button:hover{
     width: 22vh;
 }
 
+.game-image:hover{
+    cursor: pointer;
+}
+
 .form-c #UserP{
     margin-right: auto;
     margin-left: auto;
@@ -356,4 +372,11 @@ input[type=text], input[type=password] {
 .rom {
     width: 40%;
     height: 58vh;
+}
+
+
+@media only screen and (max-width: 1200px) { 
+    .page {
+        width: 95%;
+    }
 }
