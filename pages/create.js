@@ -69,7 +69,7 @@ const games = [
     {
         gamename: "Slope",
         gameIMG : "images/slope.png",
-        link: "sloped.yodacode.repl.co/ubgo/aHR0cHM6Ly9yYXdjZG4uZ2l0aGFjay5jb20=/scheng123321/tmm-html5-cdn1/master/slope/index.html"   ,
+        link: "rawcdn.githack.com/scheng123321/tmm-html5-cdn1/master/slope/index.html"   ,
         viewed_on: 0,                genre: "Endleses"
     },
     {
@@ -173,6 +173,12 @@ const games = [
         gameIMG : "images/d2708e8aa31df3fe7b211bca36405d6d.jpg",
         link: "script.google.com/macros/s/AKfycbxO8jKpDOwFYpSGrGbReR4Mv2e1-6T4uHsWBphygjzyG8Qqpvij/exec"   ,
         viewed_on: 0,                genre: "Action"
+    },
+    {
+        gamename: "FNAF-1",
+        gameIMG : "images/2507d09441962a388e004cff7ef745db47b43d9ff42a248327da95116bfcc381_200.jpg",
+        link: "g.vseigru.net/scratch/app/?id=217819833&turbo=false"   ,
+        viewed_on: 0,                genre: "Horror",
     },
     {
         gamename: "FNAF-2",
@@ -296,41 +302,6 @@ const games = [
         genre: "Horror"
     },
     {
-        gamename: "make sure its closed",
-        gameIMG : "images/LCV4CG.png",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/1342653/MSIC-WEBGL/index.html?v=1574335785"   ,
-        viewed_on: 0,
-        genre: "Horror"
-    },
-    {
-        gamename: "LeftOvers",
-        gameIMG : "images/leftovers.png",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/4826476/Leftovers_WebGL/index.html"   ,
-        viewed_on: 0,
-        genre: "Horror"
-    },
-    {
-        gamename: "Burger & Frights",
-        gameIMG : "images/burger-frights.jpg",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/5033568/index.html"   ,
-        viewed_on: 0,
-        genre: "Horror"
-    },
-    {
-        gamename: "78 Hour Rain",
-        gameIMG : "images/GffS8p.gif",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/5033568/index.html"   ,
-        viewed_on: 0,
-        genre: "Horror"
-    },
-    {
-        gamename: "ON.OFF",
-        gameIMG : "images/download (2).jpg",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/1366873/index.html?v=1574335727"   ,
-        viewed_on: 0,
-        genre: "Horror"
-    },
-    {
         gamename: "MIDNIGHT CAMPING",
         gameIMG : "images/eel1wX.png",
         link: "v6p9d9t4.ssl.hwcdn.net/html/5077060/index.html"   ,
@@ -385,6 +356,10 @@ function change_page(bof){
         }
     
         destroy_frame()
+
+        if (document.getElementById("download-holder").style.display = "flex") {
+            document.getElementById("download-holder").style.display = "none"
+        }
     
         if (!document.getElementById("pg"+current_page)) {
     
@@ -434,6 +409,8 @@ function create_iframe(link,r){
                 removeBtn.style.display = "none"
             })
 
+            document.getElementById("download-holder").style.display = "flex"
+
             let download = document.createElement('a')
             download.id = "download"
             download.innerHTML = "This games file was to big to host. So you have to download it play it(click me to download it)"
@@ -447,7 +424,7 @@ function create_iframe(link,r){
                 download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
             }
 
-            document.body.appendChild(download)
+            document.getElementById("download-holder").appendChild(download)
         } else {
             page234242.style.display = "flex"
             games_played = games_played + 1;
