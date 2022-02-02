@@ -202,6 +202,13 @@ const games = [
         viewed_on: 0,
         genre: "Horror",hardcoded:"true"
     },
+        {
+        gamename: "FNAF SL",
+        gameIMG : "images/Mobileapp.jpg",
+        link: "fnafsl"   ,
+        viewed_on: 0,
+        genre: "Horror",hardcoded:"true"
+    },
     {
         gamename: "Cookie Clicker",
         gameIMG : "images/cookie.jpg",
@@ -322,7 +329,7 @@ const games = [
 let iframe_created = false;
 let pages = 0
 let time_on = 0
-let all_pages = 2
+let all_pages = 3
 let current_page = 1
 let games_created = 0
 let games_played = 0
@@ -423,6 +430,9 @@ function create_iframe(link,r){
             }
             if (link == "fnaf4.html") {
                 download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
+            }
+            if(link == "fnafsl") {
+               download.href = "https://drive.google.com/file/d/13KCjo2T9OUyewozT6AlilQF0ZLhwCnNT/view?usp=sharing" 
             }
 
             document.getElementById("download-holder").appendChild(download)
