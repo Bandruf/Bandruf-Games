@@ -1,3 +1,4 @@
+console.log("______")
 const games = [
     {
         gamename: "Retro Bowl",
