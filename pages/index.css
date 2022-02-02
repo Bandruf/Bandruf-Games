@@ -114,6 +114,7 @@ a {
 h1{
     color: rgb(240, 230, 230);
     background-color: rgb(46, 44, 44);
+    font-size: 4vh;
     text-align: center;
     border-radius: 5px;
     border: 2px solid black;
@@ -268,18 +269,25 @@ a{
     z-index: 3;
 }
 
+#counter{
+    background-color: transparent;
+}
+
 .game-button{ 
     width: 85%;
     height: 3.8vh;
     cursor: pointer;
     margin-top: auto;
     border-radius: 5px;
-    font-weight: bold;
+    text-align: center;
+    align-items: center;
     background-color: rgb(56, 52, 52);
     color: rgb(240, 230, 230);
     border: 2px solid black;
+    white-space: pre-wrap;
+    word-break: break-all;
     word-wrap: break-word;
-    overflow:hidden;
+    font-size: auto;
     margin-bottom: 5px;
 }
 
