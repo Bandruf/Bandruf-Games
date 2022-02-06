@@ -77,6 +77,10 @@
     display: none;
 }
 
+#title:hover{
+    cursor: pointer;
+}
+
 #user-hold{
     width: 20%;
     height: 30vh;
@@ -104,7 +108,7 @@
     text-align: center;
     width: 30%;
     height: 10vh;
-    background-color: rgb(34, 33, 33);
+    background-color: transparent;
 }
 
 a {
@@ -243,6 +247,11 @@ a{
     z-index: 2;
 }
 
+.game-image:hover{
+    cursor: pointer;
+    width: 90%;
+}
+
 #burger-img{
     width: 100%;
     height: 100%;
@@ -289,6 +298,10 @@ a{
     word-wrap: break-word;
     font-size: auto;
     margin-bottom: 5px;
+}
+
+.game-button:hover{
+    width: 90%;
 }
 
 button{
@@ -342,10 +355,6 @@ button:hover{
     width: 22vh;
 }
 
-.game-image:hover{
-    cursor: pointer;
-}
-
 .form-c #UserP{
     margin-right: auto;
     margin-left: auto;
@@ -371,6 +380,24 @@ input[type=text], input[type=password] {
     text-align: center;
     justify-content: center;
     background-color: transparent;
+}
+
+#nextPage{
+    width: 5%;
+    height: 5vh;
+}
+
+#previousPage{
+    width: 5%;
+    height: 5vh;
+}
+
+#previousPage:hover{
+    width: 7%;
+}
+
+#nextPage:hover{
+    width: 7%;
 }
 
 .form-c{
