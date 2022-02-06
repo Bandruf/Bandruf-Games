@@ -1,4 +1,3 @@
-console.log("______")
 const games = [
     {
         gamename: "Retro Bowl",
@@ -66,12 +65,6 @@ const games = [
         gameIMG : "images/rooftop-snipers.jpg",
         link: "bandruf.github.io/rooftopsnipers"   ,
         viewed_on: 0,                genre: "Action"
-    },
-    {
-        gamename: "Slope",
-        gameIMG : "images/slope.png",
-        link: "rawcdn.githack.com/scheng123321/tmm-html5-cdn1/master/slope/index.html"   ,
-        viewed_on: 0,                genre: "Endleses"
     },
     {
         gamename: "Trigger Rally",
@@ -202,13 +195,6 @@ const games = [
         viewed_on: 0,
         genre: "Horror",hardcoded:"true"
     },
-        {
-        gamename: "FNAF SL",
-        gameIMG : "images/Mobileapp.jpg",
-        link: "fnafsl"   ,
-        viewed_on: 0,
-        genre: "Horror",hardcoded:"true"
-    },
     {
         gamename: "Cookie Clicker",
         gameIMG : "images/cookie.jpg",
@@ -323,13 +309,27 @@ const games = [
         viewed_on: 0,
         genre: "Shooter"
     },
+    {
+        gamename: "Mario Kart",
+        gameIMG : "images/maxresdefault.0.jpg",
+        link: "bandruf.github.io/mario-kart/"   ,
+        viewed_on: 0,
+        genre: "Racing"
+    },
+    {
+        gamename: "Laser Tag FPS",
+        gameIMG : "images/336871691_480x360.png",
+        link: "bandruf.github.io/Laser-Tag-Scratch-HTMLIFIED/"   ,
+        viewed_on: 0,
+        genre: "Shooter"
+    },
 ]
 
 // varibles
 let iframe_created = false;
 let pages = 0
 let time_on = 0
-let all_pages = 3
+let all_pages = 2
 let current_page = 1
 let games_created = 0
 let games_played = 0
@@ -417,6 +417,10 @@ function create_iframe(link,r){
                 removeBtn.style.display = "none"
             })
 
+            if (document.getElementById("download")){
+                document.getElementById("download").remove()
+            }
+
             document.getElementById("download-holder").style.display = "flex"
 
             let download = document.createElement('a')
@@ -430,9 +434,6 @@ function create_iframe(link,r){
             }
             if (link == "fnaf4.html") {
                 download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
-            }
-            if(link == "fnafsl") {
-               download.href = "https://drive.google.com/file/d/13KCjo2T9OUyewozT6AlilQF0ZLhwCnNT/view?usp=sharing" 
             }
 
             document.getElementById("download-holder").appendChild(download)
@@ -531,6 +532,15 @@ function u(i){
         pages += 1
         pageIndex += 1
         games_created = 0
+    }
+}
+
+// go home
+document.getElementById("title").onclick = function(){
+    destroy_frame()
+
+    if (document.getElementById("download")) {
+        document.getElementById("download").remove()
     }
 }
 
