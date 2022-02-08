@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>Erik Koopmans</author>
+    <description>Query HTML pages with GET or POST and custom headers.</description>
+    <sampleQuery>select * from {table} where url="myurl" and query="a=1&amp;b=2"</sampleQuery>
+    <documentationURL></documentationURL>
+  </meta>
+  <bindings>
+  <select itemPath="" produces="XML">
+    <urls>
+      <url>{url}</url>
+    </urls>
+    <inputs>
+      <key id="url" type="xs:string" required="true" paramType="variable"/>
+      <key id="method" type="xs:string" required="false" paramType="variable"/>
+      <key id="query" type="xs:string" required="false" paramType="variable"/>
+      <key id="data" type="xs:string" required="false" paramType="variable"/>
+      <key id="header" type="xs:string" required="false" paramType="variable"/>
+    </inputs>
+    <execute><![CDATA[
+
+      // Check for GET vs POST method and handle query/data
+      var post = (method && method.toLowerCase()==='post');
+      if (query)  { url = url + '?' + query; }
+      if (data)   { data = decodeURIComponent(data); }
+
+      // Create the request object
+      var req = y.rest(url);
+
+      // Handle any custom headers (split by ASCII[0] character)
+      if (header) {
+        var headerList = header.split(String.fromCharCode(0));
+        for (var i=0; i<headerList.length; i++) {
+          var splitInd = headerList[i].indexOf(': ');
+          var hInfo = [headerList[i].slice(0,splitInd), headerList[i].slice(splitInd+1)];
+          req.header(hInfo[0], hInfo[1]);
+        }
+      }
+
+      // Issue the GET/POST request and return the response
+      if (post)  { var res = req.post(data); }
+      else       { var res = req.get(); }
+      response.object = res;
+
+    ]]></execute>
+  </select>
+  </bindings>
+</table>
