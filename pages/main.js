@@ -4,7 +4,7 @@ import{games} from './games.js'
 let iframe_created = false;
 let pages = 0
 let time_on = 0
-let all_pages = 2
+let all_pages = 3
 let current_page = 1
 let games_created = 0
 let games_played = 0
@@ -189,11 +189,15 @@ function u(i){
         create_iframe(i.link,i.hardcoded)
     };
 
+    let image_div = document.createElement("div")
+    image_div.classList.add("image-holder")
+    div.appendChild(image_div)
+
     // create game image
     let image = document.createElement("img")
     image.classList.add("game-image")
     image.src = i.gameIMG
-    div.appendChild(image)
+    image_div.appendChild(image)
     div.appendChild(div_game_name)
     document.getElementById("pg"+current_page).appendChild(div)
     games_created += 1
