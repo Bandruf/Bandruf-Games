@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0; 
     background-color: rgb(68, 64, 64);
+    font-family: 'Fira Sans', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
 
 .headerContainer { 
     width: 100%;
@@ -185,15 +188,39 @@ h1{
     display: none;
 }
 
-.setting{
-    width: 20vh;
-    height: 3vh;
+#fullscreen{
+    font-size: 50px;
     cursor: pointer;
     font-weight: bold;
-    background-color: rgb(56, 52, 52);
     color: rgb(240, 230, 230);
-    border: 2px solid black;
 }
+
+#home{
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(240, 230, 230);
+}
+
+#fullscreen:hover{
+    font-size: 65px;
+}
+
+#settings{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 0; bottom: 0; left: 100; right: 0;
+    background-color: transparent;
+}
+
+#settings:hover{
+    cursor: pointer;
+}
+
+#home:hover{
+    font-size: 65px;
+}
+
 
 #game-frame{
     width: 95%;
@@ -220,10 +247,6 @@ h1{
     box-shadow: 5px 5px 10px black;
 }
 
-a{
-
-}
-
 #menu{
     visibility: hidden;
     background-color: rgb(46, 44, 44);
@@ -236,20 +259,15 @@ a{
 }
 
 .game-image{
-    width: 85%; height: 14vh;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    margin-top: 5px;
+    width: 100%;
+    height: auto;
     display: flex;
-    object-fit: cover;
+    object-fit:cover;
     flex-wrap: wrap;
-    z-index: 2;
 }
 
 .game-image:hover{
     cursor: pointer;
-    width: 90%;
 }
 
 #burger-img{
@@ -295,8 +313,9 @@ a{
     border: 2px solid black;
     white-space: pre-wrap;
     word-break: break-all;
+    overflow-x: initial;
     word-wrap: break-word;
-    font-size: auto;
+    font-size: 0.75vw * 1vw;
     margin-bottom: 5px;
 }
 
@@ -339,12 +358,12 @@ button{
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    margin-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
-    gap: 15px;
+    gap: 10px;
 }
 
 button:hover{
@@ -352,7 +371,7 @@ button:hover{
 }
 
 .setting:hover{
-    width: 22vh;
+    font-size: 3.8rem;
 }
 
 .form-c #UserP{
@@ -418,9 +437,51 @@ input[type=text], input[type=password] {
     height: 58vh;
 }
 
+.image-holder{
+    width: 85%; height: 14vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    z-index: 2;
+}
 
-@media only screen and (max-width: 1200px) { 
+@media screen and (max-width: 739px) { 
+    .image-holder {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 739px) { 
     .page {
-        width: 95%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    .page {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    .holder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 739px) { 
+    .holder {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 739px) { 
+    .game-image {
+        object-fit:cover;
     }
 }
