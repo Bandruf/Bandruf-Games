@@ -323,4 +323,11 @@ export const games = [
         viewed_on: 0,
         genre: "Shooter"
     },
+    {
+        gamename: "Minecraft",
+        gameIMG : "images/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.webp",
+        link: "g.eags.us/eaglercraft/game.html"   ,
+        viewed_on: 0,
+        genre: "Shooter"
+    },
 ]
