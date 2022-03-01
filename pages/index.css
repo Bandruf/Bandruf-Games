@@ -479,9 +479,3 @@ input[type=text], input[type=password] {
         width: 45%;
     }
 }
-
-@media screen and (max-width: 739px) { 
-    .game-image {
-        object-fit:cover;
-    }
-}
