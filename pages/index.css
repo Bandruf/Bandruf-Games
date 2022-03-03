@@ -259,6 +259,17 @@ h1{
 
 .game-image:hover{
     cursor: pointer;
+    opacity: 0.6;
+}
+
+#Disguise{
+    position: absolute;
+
+    right: 0;
+    left: auto;
+
+    width: 5%;
+    height: 100%;
 }
 
 #burger-img{
@@ -292,26 +303,22 @@ h1{
 }
 
 .game-button{ 
-    width: 85%;
+    width: 100%;
     height: 3.8vh;
     cursor: pointer;
     margin-top: auto;
     border-radius: 5px;
     text-align: center;
     align-items: center;
-    background-color: rgb(56, 52, 52);
+    background-color: rgb(31, 30, 30);
     color: rgb(240, 230, 230);
-    border: 2px solid black;
+    border: 0px solid black;
     white-space: pre-wrap;
     word-break: break-all;
     overflow-x: initial;
     word-wrap: break-word;
-    font-size: 0.75vw * 1vw;
+    font-size: 12px;
     margin-bottom: 5px;
-}
-
-.game-button:hover{
-    width: 90%;
 }
 
 button{
