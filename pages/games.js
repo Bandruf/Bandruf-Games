@@ -331,7 +331,7 @@ export const games = [
         genre: "Shooter"
     },
     {
-        gamename: "Madalin Stunt Cars Multiplayer",
+        gamename: "Madalin Stunt Cars",
         gameIMG : "images/msc2-1x1-thumb.webp",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-madalin-cars-multiplayer"   ,
         viewed_on: 0,
@@ -346,6 +346,66 @@ export const games = [
         gamename: "Snow Battle.io",
         gameIMG : "images/647e8f6b-ecfa-4e5b-ac40-7867d790efd5_ic.png",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-snowbattle-io"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Ball Fall 3D",
+        gameIMG : "images/7612_5eb3ec4a42edb.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-ball-fall-3d"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Figher Aircraft Pilot",
+        gameIMG : "images/thumbnail464x348.gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-fighter-aircraft-pilot"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Death Run 3D",
+        gameIMG : "images/download-m240x240.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-death-run-3d"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Helix Jump",
+        gameIMG : "images/unnamed (2).png",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-death-run-3d"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Subway Runner",
+        gameIMG : "images/8961_5eb3eea98e210.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-subway-runner"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Slope",
+        gameIMG : "images/Screen-Shot-2017-12-16-at-1.12.38-AM.png",
+        link: "advanced-channeler.02.gz-associates.com/?t=tmm-slope"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Getaway Shootout",
+        gameIMG : "images/getaway-shootout.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-getaway-shootout"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "City Wars",
+        gameIMG : "images/thumbnail464x348 (1).gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-city-wars"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "ATV QUAD RACING",
+        gameIMG : "images/thumbnail464x348 (2).gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-ubran-quad-racing"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Zombs Royale",
+        gameIMG : "images/unnamed.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tmm-zombsroyale"   ,
         viewed_on: 0,
     },
 ]
