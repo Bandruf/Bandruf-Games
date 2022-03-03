@@ -402,10 +402,4 @@ export const games = [
         link: "advanced-channeler.02.gz-associates.com/?t=tam-ubran-quad-racing"   ,
         viewed_on: 0,
     },
-    {
-        gamename: "Zombs Royale",
-        gameIMG : "images/unnamed.jpg",
-        link: "advanced-channeler.02.gz-associates.com/?t=tmm-zombsroyale"   ,
-        viewed_on: 0,
-    },
 ]
