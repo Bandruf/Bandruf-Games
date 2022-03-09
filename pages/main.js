@@ -111,7 +111,14 @@ function create_iframe(link,r){
                 download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
             }
 
+            
+            let help = document.createElement('a')
+            help.id = "help"
+            help.href="https://docs.google.com/document/d/1IcT91NbslhsEM_DF35MW56ak_skqRVmq7FFU1NMNxE4/edit?usp=sharing"
+            help.innerHTML = "Click here for help"
+
             document.getElementById("download-holder").appendChild(download)
+            document.getElementById("download-holder").appendChild(help)
         } else {
             page234242.style.display = "flex"
             games_played = games_played + 1;
