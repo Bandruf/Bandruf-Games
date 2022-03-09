@@ -117,7 +117,7 @@ export const games = [
     {
         gamename: "Basket Bros",
         gameIMG : "images/r7xClHeUcJ2ENl-400-300.jpg",
-        link: "basketballtips.info"   ,
+        link: "vtune.net"   ,
         viewed_on: 0,                genre: "Sports"
     },
     {
@@ -400,6 +400,18 @@ export const games = [
         gamename: "ATV QUAD RACING",
         gameIMG : "images/thumbnail464x348 (2).gif",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-ubran-quad-racing"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Crossy Road",
+        gameIMG : "images/76fc1b000203faf71b77a75b10022142.avif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-crossyroad"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Vex 3",
+        gameIMG : "images/512x512bb.jpg",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-focus-frame&s=%3Furl%3D%252Ftmm-vex3%252F"   ,
         viewed_on: 0,
     },
 ]
