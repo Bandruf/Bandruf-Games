@@ -180,6 +180,61 @@ function destroy_frame(){
 }
 // end of iframe
 
+// tab disguise
+document.getElementById("Disguise").onclick = function(){
+    document.getElementById("disg_menu").style.display = "flex"
+}
+
+document.getElementById("classroom").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "Classes"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/1200px-Google_Classroom_icon.svg.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("drive").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "My Drive - Google Drive"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/860px-Google_Drive_icon_(2020).svg.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("tab").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "New Tab"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/google-chrome-icon-256-removebg-preview.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("Docs").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "Google Docs"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/76310_doc_256x256.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+//
+
+
 let count = 0
 
 function u(i){
