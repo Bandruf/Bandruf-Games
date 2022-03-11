@@ -18,19 +18,25 @@
     background-color: rgb(36, 34, 34)
 }
 
+.disg_button{
+    width: 100%;
+    height: 5vh;
+}
+
 #disg_menu{
     position: absolute;
     display: none;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
 
     top: 80%;
     right: 0;
     left: auto;
 
     background-color: rgb(24, 23, 23);
-    width: 12%;
-    height: 17vh;
+    width: 25%;
+    height: 15vh;
 }
 
 #indexpages{
