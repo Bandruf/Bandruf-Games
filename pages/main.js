@@ -1,5 +1,5 @@
 import{games} from './games.js'
-
+// nick made it
 // varibles
 let iframe_created = false;
 let pages = 0
@@ -181,8 +181,16 @@ function destroy_frame(){
 // end of iframe
 
 // tab disguise
+let disg_vis = false
+// tab disguise
 document.getElementById("Disguise").onclick = function(){
-    document.getElementById("disg_menu").style.display = "flex"
+    if (disg_vis == false) {
+        disg_vis = true
+        document.getElementById("disg_menu").style.display = "flex"
+    } else {
+        disg_vis = false
+        document.getElementById("disg_menu").style.display = "none"
+    }
 }
 
 document.getElementById("classroom").onclick = function(){
