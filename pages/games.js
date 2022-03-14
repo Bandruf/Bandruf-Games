@@ -253,165 +253,191 @@ export const games = [
         gamename: "Motocross Hero",
         gameIMG : "images/motocross-180x180.png",
         link: "www.mathplayground.com/motocross-hero/index.html"   ,
-        viewed_on: 0,                genre: "Sports"
+        viewed_on: 0,                        isfile: "true",
     },
     {
         gamename: "X-Trench Run",
         gameIMG : "images/xtrenchrun_lg.png",
         link: "www.mathplayground.com/x-trench-run/index.html"   ,
-        viewed_on: 0,                genre: "Endless"
+        viewed_on: 0,                        isfile: "true",
     },
     {
         gamename: "Paper Minecraft",
         gameIMG : "images/WNYRYXU05UfhtN-400-300.jpg",
         link: "bandruf.github.io/ggg/"   ,
-        viewed_on: 0,                genre: "Endless"
+        viewed_on: 0,                        isfile: "true",
     },
     {
         gamename: "Terraria(SCRATCH)",
         gameIMG : "images/322341152_480x360.png",
         link: "scratch.mit.edu/projects/322341152/embed"   ,
         viewed_on: 0,
-        genre:"Endless"
+        isfile: "true",
     },
     {
         gamename: "8 Ball",
         gameIMG : "images/pool.jpeg",
         link: "isgames.github.io/8ball/"   ,
         viewed_on: 0,
-        genre: "Action"
+        isfile: "true",
     },
     {
         gamename: "1v1 LOL",
         gameIMG : "images/download (1).jpg",
         link: "degeneracy.dazaseal.repl.co/go/hvtrs8%2F-1t1%2Clml/"   ,
         viewed_on: 0,
-        genre: "Action"
+        isfile: "true",
     },
     {
         gamename: "The Open House",
         gameIMG : "images/KEnve9.png",
         link: "v6p9d9t4.ssl.hwcdn.net/html/2049913/The%20Open%20House%20WebGL/index.html?v=1591302211"   ,
         viewed_on: 0,
-        genre: "Horror"
+        isfile: "true",
     },
     {
         gamename: "MIDNIGHT CAMPING",
         gameIMG : "images/eel1wX.png",
         link: "v6p9d9t4.ssl.hwcdn.net/html/5077060/index.html"   ,
         viewed_on: 0,
-        genre: "Horror"
+        isfile: "true",
     },
     {
         gamename: "Gore Script",
         gameIMG : "images/unnamed (1).jpg",
         link: "gorescript.github.io/classic/play/"   ,
         viewed_on: 0,
-        genre: "Shooter"
+        isfile: "true",
     },
     {
         gamename: "Mario Kart",
         gameIMG : "images/maxresdefault.0.jpg",
         link: "bandruf.github.io/mario-kart/"   ,
         viewed_on: 0,
-        genre: "Racing"
+        isfile: "true",
     },
     {
         gamename: "Laser Tag FPS",
         gameIMG : "images/336871691_480x360.png",
         link: "bandruf.github.io/Laser-Tag-Scratch-HTMLIFIED/"   ,
         viewed_on: 0,
-        genre: "Shooter"
+        isfile: "true",
     },
     {
         gamename: "Minecraft",
         gameIMG : "images/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.webp",
         link: "g.eags.us/eaglercraft/game.html"   ,
         viewed_on: 0,
-        genre: "Shooter"
+        isfile: "true",
     },
     {
         gamename: "Madalin Stunt Cars",
         gameIMG : "images/msc2-1x1-thumb.webp",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-madalin-cars-multiplayer"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Aqua Park.io",
         gameIMG : "images/unnamed (1).png",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-slippery-water-slides"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Snow Battle.io",
         gameIMG : "images/647e8f6b-ecfa-4e5b-ac40-7867d790efd5_ic.png",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-snowbattle-io"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Ball Fall 3D",
         gameIMG : "images/7612_5eb3ec4a42edb.jpg",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-ball-fall-3d"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Figher Aircraft Pilot",
         gameIMG : "images/thumbnail464x348.gif",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-fighter-aircraft-pilot"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Death Run 3D",
         gameIMG : "images/download-m240x240.jpg",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-death-run-3d"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Helix Jump",
         gameIMG : "images/unnamed (2).png",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-death-run-3d"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Subway Runner",
         gameIMG : "images/8961_5eb3eea98e210.jpg",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-subway-runner"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Slope",
         gameIMG : "images/Screen-Shot-2017-12-16-at-1.12.38-AM.png",
         link: "advanced-channeler.02.gz-associates.com/?t=tmm-slope"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Getaway Shootout",
         gameIMG : "images/getaway-shootout.jpg",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-getaway-shootout"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "City Wars",
         gameIMG : "images/thumbnail464x348 (1).gif",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-city-wars"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "ATV QUAD RACING",
         gameIMG : "images/thumbnail464x348 (2).gif",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-ubran-quad-racing"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Crossy Road",
         gameIMG : "images/76fc1b000203faf71b77a75b10022142.avif",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-crossyroad"   ,
-        viewed_on: 0,
+        viewed_on: 0,        isfile: "true",
     },
     {
         gamename: "Vex 3",
         gameIMG : "images/512x512bb.jpg",
         link: "advanced-channeler.02.gz-associates.com/?t=tam-focus-frame&s=%3Furl%3D%252Ftmm-vex3%252F"   ,
+        viewed_on: 0,
+        isfile: "false",
+    },
+    {
+        gamename: "Vex 5",
+        gameIMG : "images/Vex-5.webp",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-vex-5"   ,
+        viewed_on: 0,
+        isfile: "false",
+    },
+    {
+        gamename: "ArmedForces.io",
+        gameIMG : "images/512.jpg",
+        link: "www.julgames.com/games/2021/unity3/armedforces-io/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Stickman Dismounting",
+        gameIMG : "images/512x512bb (1).jpg",
+        link: "bp21i85fs4g7ma08il0a2l559u4of1cm-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/s036r8h4/stdis.xml"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Police Pursuit 2",
+        gameIMG : "images/Wb1AI71SdPjo6L-400-300.jpg",
+        link: "debbiewatermanphd.com/uploads/5/5/6/7/5567194/custom_themes/593675271171586975/police_pursuit2.html"   ,
         viewed_on: 0,
     },
 ]
