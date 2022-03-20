@@ -1,5 +1,5 @@
 import{games} from './games.js'
-// nick made it
+
 // varibles
 let iframe_created = false;
 let pages = 0
@@ -16,7 +16,6 @@ frame.scroll = false
 
 let pageIndex = 1
 
-// fullscreen ):
 function fullscreen() {
     if (frame.requestFullscreen) {
         frame.requestFullscreen();
@@ -80,6 +79,7 @@ function change_page(bof){
 
 frame.classList.add("frame")
 
+
 // start of iframe
 function create_iframe(link,r){
     let page234242 = document.querySelector(".game-holder")
@@ -87,6 +87,7 @@ function create_iframe(link,r){
     let holder = document.querySelectorAll(".holder")
 
     if (!iframe_created == true){
+        console.log(link)
         if (r == "true") {
             holder.forEach(removeBtn => { 
                 removeBtn.style.display = "none"
@@ -110,7 +111,10 @@ function create_iframe(link,r){
             if (link == "fnaf4.html") {
                 download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
             }
-
+            if (link == "force.html") {
+                document.getElementById("download").remove()
+                file_it("force.html")
+            }
             
             let help = document.createElement('a')
             help.id = "help"
@@ -180,7 +184,6 @@ function destroy_frame(){
 }
 // end of iframe
 
-// tab disguise
 let disg_vis = false
 // tab disguise
 document.getElementById("Disguise").onclick = function(){
@@ -257,6 +260,7 @@ function u(i){
     div_game_name.classList.add("game-button")
     //
 
+
     div_game_name.onclick = function() {
         create_iframe(i.link,i.hardcoded)
     };
@@ -293,6 +297,10 @@ function u(i){
         pageIndex += 1
         games_created = 0
     }
+}
+
+document.getElementById("discord").onclick = function(){
+    window.location.href = "https://discord.gg/NHpHf5XVQn"
 }
 
 // go home
