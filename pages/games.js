@@ -282,27 +282,6 @@ export const games = [
         isfile: "true",
     },
     {
-        gamename: "1v1 LOL",
-        gameIMG : "images/download (1).jpg",
-        link: "degeneracy.dazaseal.repl.co/go/hvtrs8%2F-1t1%2Clml/"   ,
-        viewed_on: 0,
-        isfile: "true",
-    },
-    {
-        gamename: "The Open House",
-        gameIMG : "images/KEnve9.png",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/2049913/The%20Open%20House%20WebGL/index.html?v=1591302211"   ,
-        viewed_on: 0,
-        isfile: "true",
-    },
-    {
-        gamename: "MIDNIGHT CAMPING",
-        gameIMG : "images/eel1wX.png",
-        link: "v6p9d9t4.ssl.hwcdn.net/html/5077060/index.html"   ,
-        viewed_on: 0,
-        isfile: "true",
-    },
-    {
         gamename: "Gore Script",
         gameIMG : "images/unnamed (1).jpg",
         link: "gorescript.github.io/classic/play/"   ,
@@ -423,9 +402,9 @@ export const games = [
         isfile: "false",
     },
     {
-        gamename: "ArmedForces.io",
-        gameIMG : "images/512.jpg",
-        link: "www.julgames.com/games/2021/unity3/armedforces-io/"   ,
+        gamename: "Pixel Warfare",
+        gameIMG : "images/Pixel Warfare unblocked.jpeg",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&mid=66&parent=https://sites.google.com/site/unblockedgame76/pixel-warfare#up_scroll=no&up_iframeURL=https://grandcanyonshuttles.com/uploads/5/5/6/7/5567194/custom_themes/593675271171586975/pixel_warfare.html&st=e%3DAIHE3cAdMhvvFSzGwtbBI4SQGcWqnRgOZDXV%252BFHS9xwK6pRprcl8XN8fdM%252Bt9gjudxhwW%252F43Ni4EGZNs9LNEkqfWFgkkK45667x%252B5W720NmGdlog7y%252FCYcLvTD3713B1%252BXYI51Bzq7wS%26c%3Denterprise&rpctoken=-4214461903170868064"   ,
         viewed_on: 0,
     },
     {
@@ -438,6 +417,30 @@ export const games = [
         gamename: "Police Pursuit 2",
         gameIMG : "images/Wb1AI71SdPjo6L-400-300.jpg",
         link: "debbiewatermanphd.com/uploads/5/5/6/7/5567194/custom_themes/593675271171586975/police_pursuit2.html"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Moto X3M Winter",
+        gameIMG : "images/bcacf81441bd4c7799a622171116ea9d-512x512.jpeg",
+        link: "bandruf.github.io/motox3mwint/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Call Of Ops 2",
+        gameIMG : "images/17870_605087652ee02.jpg",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&mid=114&parent=https://sites.google.com/site/unblockedgame76/call-of-ops-2#up_scroll=no&up_iframeURL=https://grandcanyonshuttles.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/call_of_ops_2.html&st=e%3DAIHE3cA5YsEKSuyD4EhklEKfj5jPJt10Eva1tIUaxer82mrUC7Mnds%252FZhIXzqpG%252B%252Fl8RPDom39iX9shyaf49qcruUevlRVMM3HpmDVKICPxsrGVf0pg%252FMOFioWcHSSdqDSI47smVvs6G%26c%3Denterprise&rpctoken=4221142408371939702"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "1v1 LOL",
+        gameIMG : "images/eee0e57332c4546fc492e8361a48cb32.avif",
+        link: "bandruf.github.io/1v1/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Shell Shockers",
+        gameIMG : "images/unnamed (4).png",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&mid=57&parent=https://sites.google.com/site/unblockedgame76/Shell-Shockers#up_scroll=no&up_iframeURL=https://eggcombat.com/&st=e%3DAIHE3cDpvtdRT3Nj%252BWmmyCUqnd%252FQPcRV1EKOcEPGp2av5xGfP5D%252Bq%252B%252FE4ERnT31OqLukxdaLy5uuLPnHoP4hww7E7iSjkjCXJRFgI2NkGcrSswk5wdy%252Fa9edt02DMW1rH2zGTtePTy9G%26c%3Denterprise&rpctoken=3644629930019984855"   ,
         viewed_on: 0,
     },
 ]
