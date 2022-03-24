@@ -443,4 +443,16 @@ export const games = [
         link: "/mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&parent=https://sites.google.com/site/unblockedgame76/blockpost#up_scroll=auto&up_iframeURL=https://debbiewatermanphd.com/uploads/3/4/3/4/139890129/custom_themes/943031582154601096/files/1index.html&st=e%3DAIHE3cCLg%252BJuPn0BqFf%252FRKVTVNQI4iQlm4h%252FRCepjS0tjeYPhi2Nf0%252F0SnEt8yEJR3bb%252FlQszaTa97LucTF5gF2ajZ02E57kz5acT5okmjlVsSegwwcEJfKT%252BbMZFrAuRMYrW27gaABl%26c%3Denterprise&rpctoken=-8526631532165725676"   ,
         viewed_on: 0,
     },
+    {
+        gamename: "Tanuki Sunset",
+        gameIMG : "images/Tanuki-Sunset-2.webp",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&mid=68&parent=https://sites.google.com/site/unblockedgame76/tanuki-sunset#up_scroll=no&up_iframeURL=https://grandcanyonshuttles.com/uploads/5/5/6/7/5567194/custom_themes/694498548762407962/tanuki_sunset.html&st=e%3DAIHE3cCAAVSoN%252FKOerM8G5%252BJcgWQG%252Bp2Y%252BYhBJ2kC95ZQM%252BYhdDj%252FBRUffS2b9%252B8NP2xKrdzzW0sQ5yqiXhBwd5jiGi%252BGT4p8DC5THHkOvygK%252Fc%252BYjZc3sEvIcjYMYd9BHqsavoIt%252Bni%26c%3Denterprise&rpctoken=-7440838617356182723"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Hanger 2",
+        gameIMG : "images/hanger-2-game.webp",
+        link: "bandruf.github.io/hanger2/"   ,
+        viewed_on: 0,
+    },
 ]
