@@ -467,10 +467,11 @@ export const games = [
         link: "bandruf.github.io/bank-robbery/"   ,
         viewed_on: 0,
     },
+
     {
-        gamename: "Noob Vs Lava 3D",
-        gameIMG : "images/default526x314.webp",
-        link: "bandruf.github.io/Noob-VS-Lava-3d/"   ,
+        gamename: "Mafia City 2",
+        gameIMG : "images/pjpg500x280.webp",
+        link: "bandruf.github.io/mafiacity2/"   ,
         viewed_on: 0,
     },
 ]
