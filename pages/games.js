@@ -462,9 +462,15 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Leader Strike",
-        gameIMG : "images/leader-strike1.jpg",
-        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=40753d033c6d88ca&libs=core&mid=65&parent=https://sites.google.com/site/unblockedgameswtf/leader-strike#up_scroll=no&up_iframeURL=https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/653104830385377496/leader-strike.html&st=e%3DAIHE3cBmFyuUDUpEkbjtpBilNZ%252Bf2%252B0uWgvJc25riXN%252BXccpVTcSFoXpAzojHpSTZQSCeu2VzjLqHKGB3RRq%252BYHq8cch83k%252FIVX5GKgxJYsIS6vAEXFDL%252BmTdUEkYiUmPWRfpu%252FANWLi%26c%3Denterprise&rpctoken=4475496452205876182"   ,
+        gamename: "Bank Robbery",
+        gameIMG : "images/orig.png",
+        link: "bandruf.github.io/bank-robbery/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Noob Vs Lava 3D",
+        gameIMG : "images/default526x314.webp",
+        link: "bandruf.github.io/Noob-VS-Lava-3d/"   ,
         viewed_on: 0,
     },
 ]
