@@ -25,6 +25,54 @@ h1{
     color: rgb(240, 230, 230);
 }
 
+#game-button1{
+    width: 10%;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+#game-button2{
+    width: 10%;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+#proxy-button{
+    width: 10%;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(56, 52, 52);
+    color: rgb(240, 230, 230);
+    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+#game-page{
+    width: 95%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
 .page-button{
     width: 150px;
     height: 50px;
