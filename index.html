@@ -14,9 +14,16 @@
     </div>
     <div id="button-container">
         <div id="game-page">
-            <button onclick="change_page()" class="page-button" id="game-button1">Games</button>
+            <button class="page-button" id="game-button1">Games</button>
         </div>
     </div>
-    <script src="js/changepage.js"></script>
+    <script>
+        document.getElementById("game-button1").onclick = function(){
+            window.location.href = "pages/games.html"
+        }
+        document.getElementById("game-button2").onclick = function(){
+            window.location.href = "APPS/apps.html"
+        }
+    </script>
 </body>
 </html>
