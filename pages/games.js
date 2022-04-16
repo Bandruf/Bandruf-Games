@@ -474,9 +474,15 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Mafia City 2",
-        gameIMG : "images/pjpg500x280.webp",
-        link: "bandruf.github.io/mafiacity2/"   ,
+        gamename: "Granny",
+        gameIMG : "images/granny_unblocked.jpg",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=8be8763db9005d0&libs=core&parent=https://sites.google.com/site/unblockedgame76/granny#up_scroll=no&up_iframeURL=https://grandcanyonshuttles.com/uploads/5/5/6/7/5567194/custom_themes/253523348422157506/1granny.html&st=e%3DAIHE3cAaDsP5rJG7G5TpEuFYBxrrLMzjr8VMcYReibfrSKIq31AubV7FJYYE4kvdx2%252Bgl2ika8vb%252BzIJr7MDtZE2fjb3JXn41bgYwYQa1QKuIhkvYTzbjfKAmib5OpP79mScVmqYIwxF%26c%3Denterprise&rpctoken=-1809631914242502595"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "BlockySnakes",
+        gameIMG : "images/Blocky Snakes-unblocked.jpg",
+        link: "bandruf.github.io/BlockySnakes/"   ,
         viewed_on: 0,
     },
 ]
