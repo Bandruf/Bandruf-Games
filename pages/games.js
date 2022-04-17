@@ -485,4 +485,22 @@ export const games = [
         link: "bandruf.github.io/BlockySnakes/"   ,
         viewed_on: 0,
     },
+    {
+        gamename: "Basketball Stars 2019",
+        gameIMG : "images/Basketball Stars unblocked.jpg",
+        link: "bandruf.github.io/basketballstars2019/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Neon Blaster",
+        gameIMG : "images/download (3).jpg",
+        link: "bandruf.github.io/neonblaster/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Rugby.Io",
+        gameIMG : "images/Ball Mayhem.png",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=8be8763db9005d0&libs=core&mid=93&parent=https://sites.google.com/site/unblockedgame76/Ball-Mayhem-Unblocked#up_scroll=no&up_iframeURL=https://grandcanyonshuttles.com/uploads/5/5/6/7/5567194/custom_themes/666344820848380631/ball-mayhem.html&st=e%3DAIHE3cDfMeoWoc%252B4K9b7l%252BxInpea1aKhwDbWoH8K9T%252BWJs1%252Bs4gQ3Ai5Uft5B2pwHGXSxpUKJi6eauNviQcEXvujoamSTTN9m%252FlW9dA4RQOGDkFZaTG0Hm0NzcfVGPPAkothA78208a9%26c%3Denterprise&rpctoken=-3739641840647815805"   ,
+        viewed_on: 0,
+    },
 ]
