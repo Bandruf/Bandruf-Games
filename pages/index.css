@@ -3,6 +3,7 @@
     padding: 0; 
     background-color: rgb(68, 64, 64);
     font-family: 'Fira Sans', sans-serif;
+    font-display: optional;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
