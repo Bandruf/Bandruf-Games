@@ -271,6 +271,7 @@ function u(i){
 
     // create game image
     let image = document.createElement("img")
+    image.alt = i.gamename
     image.classList.add("game-image")
     image.src = i.gameIMG
     image_div.appendChild(image)
