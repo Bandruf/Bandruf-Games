@@ -28,10 +28,9 @@
          <h1 id="title">Bandruf Games</h1> 
         <!--<button id="panic-button" onclick="show()">Panic Settings</button>-->
     </div>
-
-    <div id="pg1" class="page"></div>
-    <div class="game-holder">
+    <div id="pg1" class="page">
     </div>
+    <div class="game-holder"></div>
     <div id="download-holder"></div>
     <div id="bottom-settings">
         <i id="fullscreen"class="fa-solid fa-expand"></i>
@@ -56,17 +55,21 @@
         <button id="Disguise">Tab Disguise</button>
         <button id="discord">Join The Discord</button>
     </div>
-
     <div id="disg_menu">
         <button id="classroom">Google Classroom</button>
         <button id="drive">Google Drive</button>
         <button id="tab">New Tab</button>
         <button id="Docs">Docs</button>
     </div>
-
-    
     <script type="module" src="main.js"></script>
     <script src="scripts/tabdis.js"></script>
+    <script src="scripts/particles.js"></script>
     <script src="https://kit.fontawesome.com/504d6e68eb.js" crossorigin="anonymous"></script>
+    <div id="particles-js"></div>
+    <script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+      </script>
 </body>
 </html> 
