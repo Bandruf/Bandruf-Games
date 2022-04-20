@@ -134,7 +134,7 @@ export const games = [
     },
     {
         gamename: "Minicars Soccer",
-        gameIMG : "images/9263_5eb3ef12bf936.jpg",
+        gameIMG : "images/download (4).jpg",
         link: "script.google.com/macros/s/AKfycbyAY5iDomb7jUu7TPmtJ0Ufv6b6Jpr7sIuj4-9ATWlkT6I2xcU/exec"   ,
         viewed_on: 0,                genre: "Sports"
     },
@@ -525,6 +525,30 @@ export const games = [
         gamename: "Temple Run 2",
         gameIMG : "images/f4b3ac7fe25cad9bc028b33f7a407f28.avif",
         link: "yell0wsuit.github.io/html5-games/games/templerun2/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "2048",
+        gameIMG : "images/2040.png",
+        link: "bandruf.github.io/2048/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Cat Trap",
+        gameIMG : "images/Cat-Trap-Game.jpg",
+        link: "bandruf.github.io/cat-trap/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Doge Miner 2",
+        gameIMG : "images/dogeminer2.webp",
+        link: "dogeminer2.com/play/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Bit Life",
+        gameIMG : "images/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg",
+        link: "bit2.application08.repl.co/"   ,
         viewed_on: 0,
     },
 ]
