@@ -506,7 +506,7 @@ export const games = [
     {
         gamename: "Case Clicker",
         gameIMG : "images/Case-Clicker-icon.webp",
-        link: "kingofkfcjamal.github.io/CaseClicker/"   ,
+        link: "bandruf.github.io/csgo-clicker-bandruf/"   ,
         viewed_on: 0,
     },
     {
@@ -546,9 +546,9 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Bit Life",
-        gameIMG : "images/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg",
-        link: "bit2.application08.repl.co/"   ,
+        gamename: "Counter Strike",
+        gameIMG : "images/152514-games-news-you-can-now-play-counter-strike-16-in-your-browser-image1-bhd9zn4sdt.jpg",
+        link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
         viewed_on: 0,
     },
 ]
