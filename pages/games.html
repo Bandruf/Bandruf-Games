@@ -22,6 +22,8 @@
 
   gtag('config', 'G-RZ4WWF4SM1');
 </script>
+</head>
+<body>
     <!-- Hotjar Tracking Code for https://bandruf.github.io/Bandruf-Games/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -33,9 +35,6 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-</head>
-<body>
-    
     <div class="headerContainer">
          <h1 id="title">Bandruf Games</h1> 
         <!--<button id="panic-button" onclick="show()">Panic Settings</button>-->
@@ -68,17 +67,18 @@
         <button id="discord">Join The Discord</button>
     </div>
     <div id="disg_menu">
-        <button id="classroom">Google Classroom</button>
-        <button id="drive">Google Drive</button>
-        <button id="tab">New Tab</button>
-        <button id="Docs">Docs</button>
+        <button class="disg_button"id="classroom">Google Classroom</button>
+        <button class="disg_button"id="drive">Google Drive</button>
+        <button class="disg_button"id="tab">New Tab</button>
+        <button class="disg_button"id="Docs">Docs</button>
     </div>
     <script type="module" src="main.js"></script>
+    <script src="scripts/tabdis.js"></script>
     <script src="scripts/particles.js"></script>
     <script src="https://kit.fontawesome.com/504d6e68eb.js" crossorigin="anonymous"></script>
-    <!--<div id="particles-js"></div>-->
+    <div id="particles-js"></div>
     <script>
-//particlesJS.load('particles-js', 'assets/particles.json', function() {
+particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
       </script>
