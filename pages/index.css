@@ -1,555 +1,350 @@
-* { 
-    margin: 0;
-    padding: 0; 
-    background-color: rgb(27, 26, 26);
-    font-family: 'Fira Sans', sans-serif;
-    font-display: optional;
-}
+import{games} from './games.js'
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+// varibles
+let iframe_created = false;
+let pages = 0
+let time_on = 0
+let all_pages = 4
+let current_page = 1
+let games_created = 0
+let games_played = 0
+let current_game = ""
+let headerContainer = document.querySelector(".headerContainer");
+var frame = document.createElement("iframe");
+frame.scroll = false
+// end
 
-.headerContainer { 
-    width: 100%;
-    height: 6vh;
-    display: flex;
-    position: fixed;
-    z-index: 5;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    background-color: rgb(36, 34, 34)
-}
+let pageIndex = 1
 
-.disg_button{
-    width: 100%;
-    height: 5vh;
-}
-
-#disg_menu{
-    position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-    z-index: 100;
-    border-radius: 10px;
-
-    top: 75%;
-    right: 0;
-    left: auto;
-
-    background-color: rgb(24, 23, 23);
-    width: 25%;
-    height: 15vh;
-}
-
-#indexpages{
-    position: sticky;
-    bottom: 122px;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(36, 34, 34)
-}
-
-#games-count{
-    position: absolute;
-    left: 0;
-    right: auto;
-    width: 8%;
-    height: 5vh;
-}
-
-#tools{
-    position: absolute;
-    left: auto;
-    right: 0;
-    width: 10%;
-    height: 5vh;
-}
-
-#fake_frame{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(51,51,51,0.7);
-    z-index: 10;
-}
-
-#uname{
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#username-frame{
-    width: 95%;
-    height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-#title:hover{
-    cursor: pointer;
-}
-
-#user-hold{
-    width: 20%;
-    height: 30vh;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid black;
-    background-color: rgb(36, 34, 34)
-}
-
-#create_button{
-    height: 80%;
-    border-radius: 5px;
-    color: rgb(240, 230, 230);
-    background-color: rgb(46, 44, 44);
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
-#download-holder{
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    display: none;
-    text-align: center;
-    width: 30%;
-    height: 10vh;
-    background-color: transparent;
-}
-
-a {
-    color: rgb(24, 23, 23);
-}
-
-h1{
-    color: rgb(240, 230, 230);
-    background-color: rgb(46, 44, 44);
-    font-size: 4vh;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
-#setting-form{
-    display: none;
-}
-
-#home-button-top{
-    margin-right: auto;
-    height: 100%;
-    text-align: center;
-    width: 10%;
-    font-size: 100%;
-    color: rgb(240, 230, 230);
-    background-color: rgb(36, 34, 34)
-}
-
-#games-count{
-    margin-left: auto;
-    margin-top: auto;
-    font-size: 100%;
-    height: 100%;
-    background-color: transparent;
-    color: rgb(240, 230, 230);
-}
-
-#page-count{
-    background-color: transparent;
-    font-size: 100%;
-    width: 100%;
-    height: 5vh;
-}
-
-#page-count-container{
-    width: 35%;
-    height: 5vh;
-}
-
-.page { 
-    position: absolute;
-    top:8%;
-    left: 0;
-    background-color: transparent;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    flex-wrap: wrap;
-    display: none;
-    z-index: 2;
-}
-
-.page{
-    width: 100%;
-    height: 85%;
-    overflow-y: scroll;
-}
-
-.game-holder { 
-    width: 77%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    display: none;
-}
-
-#fullscreen{
-    font-size: 50px;
-    cursor: pointer;
-    font-weight: bold;
-    color: rgb(240, 230, 230);
-    background-color: transparent;
-}
-
-#home{
-    font-size: 50px;
-    cursor: pointer;
-    font-weight: bold;
-    color: rgb(240, 230, 230);
-    background-color: transparent;
-}
-
-#fullscreen:hover{
-    cursor: pointer;
-}
-
-#settings{
-    position: absolute;
-    font-size: 2.5rem;
-    top: 0; bottom: 0; left: 100; right: 0;
-    background-color: transparent;
-}
-
-#settings:hover{
-    cursor: pointer;
-}
-
-#home:hover{
-    cursor: pointer;
-}
-
-
-#game-frame{
-    position: fixed;
-    width: 95%;
-    height: 80vh;
-    z-index: 3;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    visibility: hidden;
-}
-
-#particles-js{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #b61924;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
-  
-
-.holder{
-    display: flex;
-    background-color: rgb(46, 44, 44);
-    border-radius: 6px;
-    width: 11%;
-    height: 23vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu{
-    visibility: hidden;
-    background-color: rgb(46, 44, 44);
-    width: 40%;
-    height: 50vh;
-    margin-left: auto;
-    margin-top: 50%;
-    z-index: 3;
-    border: 5px solid black;
-}
-
-.game-image{
-    width: 100%;
-    position: relative;
-    height: auto;
-    display: flex;
-    object-fit:inherit;
-    flex-wrap: wrap;
-}
-
-.game-image:hover{
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-#Disguise{
-    position: absolute;
-
-    right: 0;
-    left: auto;
-
-    width: 5%;
-    height: 100%;
-}
-
-#discord{
-    position: absolute;
-
-    right: 0;
-    left: 90%;
-
-    width: 5%;
-    height: 100%;
-}
-#disbale{
-    position: absolute;
-
-    right: 0;
-    left: 85%;
-
-    width: 5%;
-    height: 100%;
-}
-
-
-#burger-img{
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: flex;
-    object-fit: contain;
-    flex-wrap: wrap;
-    z-index: 2;
-}
-
-#burger-button{
-    width: 5%;
-    height: 7vh;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(36, 34, 34);
-    border: none;
-    z-index: 3;
-}
-
-#counter{
-    background-color: transparent;
-}
-
-.game-button{ 
-    width: 100%;
-    height: 5vh;
-    cursor: pointer;
-    margin-top: auto;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(31, 30, 30);
-    color: rgb(240, 230, 230);
-    border: 0px solid black;
-    white-space: pre-wrap;
-    word-break: break-all;
-    overflow-x: initial;
-    word-wrap: break-word;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-button{
-    cursor: pointer;
-    margin-top: auto;
-    font-weight: bold;
-    background-color: rgb(56, 52, 52);
-    color: rgb(240, 230, 230);
-    border: 2px solid black;
-    word-wrap: break-word;
-    margin-bottom: 5px;
-}
-.di
-
-
-#close-button{
-    width: 30px;
-    margin-left: auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-size: 100%;
-}
-
-#panic-button{
-    width: 10%;
-    height: 4vh;
-    color: rgb(240, 230, 230);
-    background-color: rgb(46, 44, 44);
-    border-radius: 5px;
-    border: 2px solid black;
-    font-size: 100%;
-}
-
-#bottom-settings{
-    width: 100%;
-    height: 50px;
-    position: relative;
-    top: 65;
-    left: 0;
-    margin-top: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    z-index: 5;
-    background-color: transparent;
-    gap: 10px;
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.setting:hover{
-    font-size: 3.8rem;
-}
-
-.form-c #UserP{
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-input[type=text], input[type=password] {
-    width: 70%;
-    height: 2vh;
-    padding: 5px;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 15%;
-    display: flex;
-    background: #f1f1f1;
+function fullscreen() {
+    if (frame.requestFullscreen) {
+        frame.requestFullscreen();
+    } else if (frame.webkitRequestFullscreen) { /* Safari */
+        frame.webkitRequestFullscreen();
+    } else if (frame.msRequestFullscreen) { /* IE11 */
+        frame.msRequestFullscreen();
+    }
   }
 
-#buttons{
-    width: 100%;
-    height: 10%;
-    margin-top: 7%;
-    text-align: center;
-    justify-content: center;
-    background-color: transparent;
-}
+// main change function
+function change_page(bof){
+        // changes page var
+        if (bof == "+") {
+            document.getElementById("pg"+current_page).style.display = "none"
+            current_page += 1
+        } else {
+            document.getElementById("pg"+current_page).style.display = "none"
+            current_page -= 1
+        }
+    
+        destroy_frame()
 
-#nextPage{
-    width: 5%;
-    height: 5vh;
-}
+        if (document.getElementById("download-holder").style.display = "flex") {
+            document.getElementById("download-holder").style.display = "none"
+        }
+    
+        if (!document.getElementById("pg"+current_page)) {
+    
+                if (document.getElementById("page-count")) {
+                    document.getElementById("page-count").innerHTML = "Page : "+current_page
+                }
+                
+                // 'create' new page
+                let new_page = document.createElement("div")
+                new_page.id = "pg"+current_page
+                new_page.classList.add("page")
+                
+                // make games on the page visible
+                games.map(function(p){
+                    if (p.viewed_on == current_page) {
+                        new_page.style.display = "flex"
+                        document.getElementById(p.gamename).style.display = "flex"
+                        new_page.appendChild(document.getElementById(p.gamename))
+                    }
+                })
+                document.body.appendChild(new_page)
+            } else{
+                document.getElementById("pg"+current_page).style.display = "flex"
+        }
 
-#previousPage{
-    width: 5%;
-    height: 5vh;
+        
+        // fix
+        games.map(function(i){
+            if (i.viewed_on != current_page) {
+                document.getElementById(i.gamename).style.display = "none"
+            }
+        })
 }
+// end
 
-#previousPage:hover{
-    width: 7%;
-}
+frame.classList.add("frame")
 
-#nextPage:hover{
-    width: 7%;
-}
 
-.form-c{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}
+// start of iframe
+function create_iframe(link,r){
+    let page234242 = document.querySelector(".game-holder")
+    let gameButton = document.querySelectorAll(".game-button")
+    let holder = document.querySelectorAll(".holder")
 
-.frame { 
-    width: 95%;
-    height: 80vh;
-    align-items: center;
-    z-index: 5;
-    border-radius: 5px;
-    justify-content: center;
-}
+    if (!iframe_created == true){
+        console.log(link)
+        if (r == "true") {
+            holder.forEach(removeBtn => { 
+                removeBtn.style.display = "none"
+            })
 
-.rom {
-    width: 40%;
-    height: 58vh;
-}
+            if (document.getElementById("download")){
+                document.getElementById("download").remove()
+            }
 
-.image-holder{
-    width: 92%; height: 22vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    z-index: 2;
-}
+            document.getElementById("download-holder").style.display = "flex"
 
-html,body{
-    height: 100%
-}
+            let download = document.createElement('a')
+            download.id = "download"
+            download.innerHTML = "This games file was to big to host. So you have to download it play it(click me to download it)"
+            if (link == "fnaf2.html") {
+                download.href = "https://drive.google.com/file/d/1tmmhUDU0_GFjtagrRxWL3Oa7kEy4rsX2/view?usp=sharing"
+            }
+            if (link == "fnaf3.html") {
+                download.href = "https://drive.google.com/file/d/1oKIxAolpAysCZFaCimhJa3XWN7OEKo_7/view?usp=sharing"
+            }
+            if (link == "fnaf4.html") {
+                download.href = "https://drive.google.com/file/d/1PnwqWPRiX1cL7KnBi9HvSyhJ4yrpw5NL/view?usp=sharing"
+            }
+            if (link == "force.html") {
+                document.getElementById("download").remove()
+                file_it("force.html")
+            }
+            
+            let help = document.createElement('a')
+            help.id = "help"
+            help.href="https://docs.google.com/document/d/1IcT91NbslhsEM_DF35MW56ak_skqRVmq7FFU1NMNxE4/edit?usp=sharing"
+            help.innerHTML = "Click here for help"
 
-#holder{
-    min-height: 100%;
-    position:relative;
-}
+            document.getElementById("download-holder").appendChild(download)
+            document.getElementById("download-holder").appendChild(help)
+        } else {
+            page234242.style.display = "flex"
+            games_played = games_played + 1;
 
-#body{
-    padding-bottom: 100px;    /* height of footer */
-}
+            if (!r) {
+                frame.src = "https://"+link;
+            } else {
+                frame.src = link
+            }
+            
+            holder.forEach(removeBtn => { 
+                removeBtn.style.display = "none"
+            })
+            document.getElementById("pg"+current_page).style.display = "none"
+    
+            document.getElementById("bottom-settings").style.display = "flex"
 
-.indexPagesContainer { 
-    background-color: rgb(36, 34, 34);
-    width: 100%;
-    height: 50px;  
-    position: fixed;
-    bottom: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    z-index: 3;
-}
+            document.getElementById("fullscreen").onclick = function(){
+                fullscreen()
+            }
 
-@media screen and (max-width: 867px) { 
-    .holder {
-        width: 50%;
-        height: 15vh;
+            document.getElementById("home").onclick = function(){
+                destroy_frame()
+                document.getElementById("pg"+current_page).style.display = "flex"
+            }
+
+            page234242.appendChild(frame)
+            iframe_created = true; 
+        }
     }
 }
 
-::-webkit-scrollbar{
-    opacity: 0.7;
+function check(){
+    games.map(function(vrf){
+        if (vrf.viewed_on == current_page) {
+            document.getElementById(vrf.gamename).style.display = "flex"
+        } else {
+            document.getElementById(vrf.gamename).style.display = "none"
+        }
+    })
+}
+
+function destroy_frame(){
+    let gameButton = document.querySelectorAll(".game-button")
+    let holder = document.querySelectorAll(".holder")
+    check()
+
+    if (iframe_created == true) {
+        //headerContainer.style.visibility= "visible";
+
+        document.getElementById("bottom-settings").style.display = "none"
+        frame.remove();
+        iframe_created = false;
+
+        if (document.getElementById("download")){
+            document.getElementById("download").remove()
+        }
+    }
+}
+// end of iframe
+
+let disg_vis = false
+// tab disguise
+document.getElementById("Disguise").onclick = function(){
+    if (disg_vis == false) {
+        disg_vis = true
+        document.getElementById("disg_menu").style.display = "flex"
+    } else {
+        disg_vis = false
+        document.getElementById("disg_menu").style.display = "none"
+    }
+}
+
+document.getElementById("classroom").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "Classes"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/1200px-Google_Classroom_icon.svg.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("drive").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "My Drive - Google Drive"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/860px-Google_Drive_icon_(2020).svg.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("tab").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "New Tab"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/google-chrome-icon-256-removebg-preview.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
+document.getElementById("Docs").onclick = function(){
+    if (document.getElementById("disg_menu").style.display = "flex") {
+        document.title = "Google Docs"
+
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = 'images/76310_doc_256x256.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+//
+
+
+let count = 0
+
+function u(i){
+    i.viewed_on = pageIndex
+
+    // div create
+    let div = document.createElement("div")
+    div.id = i.gamename
+    div.classList.add("holder")
+    let div_game_name = document.createElement("button")
+    div_game_name.innerHTML = i.gamename
+    div_game_name.classList.add("game-button")
+    //
+
+
+    div_game_name.onclick = function() {
+        create_iframe(i.link,i.hardcoded)
+    };
+
+    let image_div = document.createElement("div")
+    image_div.classList.add("image-holder")
+    div.appendChild(image_div)
+
+    // create game image
+    let image = document.createElement("img")
+    image.alt = i.gamename
+    image.classList.add("game-image")
+    image.src = i.gameIMG
+    image_div.appendChild(image)
+    div.appendChild(div_game_name)
+    document.getElementById("pg"+current_page).appendChild(div)
+    games_created += 1
+
+    image.onclick = function(){
+        create_iframe(i.link,i.hardcoded)
+    }
+    //
+
+    count++
+    document.getElementById("games-count").innerHTML = count+" Games Available"
+
+    // hide the div its not on the right page
+    if (i.viewed_on != current_page) {
+        div.style.display = "none"
+    }
+
+    // checks if games are more than 25 if it is then makes a new page
+    if (games_created > 23){
+        pages += 1
+        pageIndex += 1
+        games_created = 0
+    }
+}
+
+document.getElementById("discord").onclick = function(){
+    window.location.href = "https://discord.gg/NHpHf5XVQn"
+}
+
+// go home
+document.getElementById("title").onclick = function(){
+    destroy_frame()
+
+    if (document.getElementById("download")) {
+        document.getElementById("download").remove()
+    }
+}
+
+// change to fun tools
+function change_doct(){
+    window.location.href = "fun/fun.html"
+}
+
+// change page positive
+document.getElementById("nextPage").addEventListener("click", function() {
+    if (current_page != all_pages) {
+        change_page("+")
+    }
+});
+
+// change page negative
+document.getElementById("previousPage").addEventListener("click", function() {
+    if (current_page > 1) {
+        change_page("-")
+    }
+});
+
+// create all games from const
+games.map(function(i){
+    u(i)
+})
+
+// visit counter with ':'
+window.addEventListener('keydown', function (e) {
+    if (e.key == ":") {
+        window.location.href = "visitcounter.html"
+    }
+}, false);
+
+// if page is equal to one find page 1 and set it to visible
+if (current_page == 1) {
+    document.getElementById("pg"+current_page).style.display = "flex"
 }
