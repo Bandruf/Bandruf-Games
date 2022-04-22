@@ -553,7 +553,7 @@ export const games = [
     },
         {
         gamename: "Ashraf El Hamayel(NEW!)",
-        gameIMG : "images/152514-games-news-you-can-now-play-counter-strike-16-in-your-browser-image1-bhd9zn4sdt.jpg",
+        gameIMG : "images/clum.jpg",
         link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
         viewed_on: 0,
     },
