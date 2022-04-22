@@ -551,10 +551,4 @@ export const games = [
         link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
         viewed_on: 0,
     },
-        {
-        gamename: "Ashraf El Hamayel(NEW!)",
-        gameIMG : "images/clum.jpg",
-        link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
-        viewed_on: 0,
-    },
 ]
