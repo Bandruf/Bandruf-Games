@@ -539,6 +539,29 @@ export const games = [
         link: "bandruf.github.io/cat-trap/"   ,
         viewed_on: 0,
     },
+        {
+        gamename: "Fit In The Wall",
+        gameIMG : "images/Fit in the Wall unblocked.jpeg",
+        link: "www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/5435fgsew45/fit-in-the-wall.xml"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Run 3",
+        gameIMG : "images/run-3.png",
+        link: "mj89sp3sau2k7lj1eg3k40hkeppguj6j-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/iframe/iframe.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=8be8763db9005d0&libs=core&mid=194&parent=https://sites.google.com/site/unblockedgameswtf/run-3#up_scroll=no&up_iframeURL=https://lekug.github.io/tn6pS9dCf37xAhkJv/&st=e%3DAIHE3cCSFSuBodH9n9h0nsm20is7Iz%252Bk71d4GZbKNwjjCiFwzHKg4qfSdUVPaxIQUfLuTVWY59gxtlNQM7RbdXh2WPaQc3AylWkMdbk%252FWyWdaS%252BEJc8TutULqh5fiTRY3wH48neO60km%26c%3Denterprise&rpctoken=9209442513115313013"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Elastic Man",
+        gameIMG : "images/elastic-man-3d-game50.webp",
+        link: "bandruf.github.io/elasticman/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Blackjack",
+        gameIMG : "images/687474703a2f2f692e696d6775722e636f6d2f4d7070646843622e706e67.png",
+        link: "blackjack-io.herokuapp.com"   ,
+        vi
     {
         gamename: "Doge Miner 2",
         gameIMG : "images/dogeminer2.webp",
