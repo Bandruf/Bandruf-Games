@@ -539,7 +539,7 @@ export const games = [
         link: "bandruf.github.io/cat-trap/"   ,
         viewed_on: 0,
     },
-        {
+    {
         gamename: "Fit In The Wall",
         gameIMG : "images/Fit in the Wall unblocked.jpeg",
         link: "www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/5435fgsew45/fit-in-the-wall.xml"   ,
@@ -561,7 +561,8 @@ export const games = [
         gamename: "Blackjack",
         gameIMG : "images/687474703a2f2f692e696d6775722e636f6d2f4d7070646843622e706e67.png",
         link: "blackjack-io.herokuapp.com"   ,
-        vi
+        viewed_on: 0,
+    },
     {
         gamename: "Doge Miner 2",
         gameIMG : "images/dogeminer2.webp",
@@ -574,4 +575,4 @@ export const games = [
         link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
         viewed_on: 0,
     },
-]
+]   
