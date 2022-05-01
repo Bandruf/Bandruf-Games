@@ -4,7 +4,7 @@ import{games} from './games.js'
 let iframe_created = false;
 let pages = 0
 let time_on = 0
-let all_pages = 4
+let all_pages = 5
 let current_page = 1
 let games_created = 0
 let games_played = 0
@@ -293,7 +293,7 @@ function u(i){
     }
 
     // checks if games are more than 25 if it is then makes a new page
-    if (games_created > 25){
+    if (games_created > 23){
         pages += 1
         pageIndex += 1
         games_created = 0
