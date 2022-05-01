@@ -575,4 +575,40 @@ export const games = [
         link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
         viewed_on: 0,
     },
+    {
+        gamename: "Solitaire",
+        gameIMG : "images/fff08e_8a3c678568a34ae6bf04945e05c68787_mv2.png",
+        link: "www.google.com/logos/fnbx/solitaire/standalone.html"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Pac Man Doodle",
+        gameIMG : "images/pacman-game-card.png",
+        link: "www.google.com/logos/2010/pacman10-i.html"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Microsoft Bubble",
+        gameIMG : "images/download (5).jpg",
+        link: "yell0wsuit.github.io/html5-games/games/ms-bubble/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Cut The Rope 2",
+        gameIMG : "images/unnamed (6).png",
+        link: "yell0wsuit.github.io/html5-games/games/ctr2/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Drunken Duel",
+        gameIMG : "images/234827_7_sq.jpg",
+        link: "bandruf.github.io/test-2/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Drunken Duel", // 100 games!
+        gameIMG : "images/maxresdefault.jpg",
+        link: "bandruf.github.io/btr5/"   ,
+        viewed_on: 0,
+    },
 ]   
