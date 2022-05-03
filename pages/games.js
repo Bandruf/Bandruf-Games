@@ -606,7 +606,7 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Drunken Duel", // 100 games!
+        gamename: "Bob The Robber 5", // 100 games!
         gameIMG : "images/maxresdefault.jpg",
         link: "bandruf.github.io/btr5/"   ,
         viewed_on: 0,
