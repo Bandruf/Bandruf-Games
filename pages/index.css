@@ -407,6 +407,15 @@ button{
     font-size: 100%;
 }
 
+#cr{
+    position: absolute;
+    left: 5%;
+    right: auto;
+    width: 11%;
+    height: 5vh;
+    background-color: transparent;
+}
+
 #panic-button{
     width: 10%;
     height: 4vh;
