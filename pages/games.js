@@ -611,4 +611,40 @@ export const games = [
         link: "bandruf.github.io/btr5/"   ,
         viewed_on: 0,
     },
+    {
+        gamename: "Geometry Dash",
+        gameIMG : "images/140185501_480x360.png",
+        link: "bandruf.github.io/geometry-dash/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Ukrainian Tractor Driver Simulator",
+        gameIMG : "images/487687696_480x360.png",
+        link: "scratch.mit.edu/projects/487687696/embed"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Sushi Clicker",
+        gameIMG : "images/571166814_480x360.png",
+        link: "bandruf.github.io/Sushi-Clicker/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Fortnite Z",
+        gameIMG : "images/Ooze_Z_-_Emoticon_-_Fortnite.webp",
+        link: "scratch.mit.edu/projects/404950182/embed"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Appel",
+        gameIMG : "images/hqdefault.jpg",
+        link: "scratch.mit.edu/projects/60917032/embed/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Getting Over It",
+        gameIMG : "images/Getting-Over-It-on-MIT-Scratch-Engine (1).webp",
+        link: "kdata1.com/2022/03/getting-over-it-scratch-edition.html"   ,
+        viewed_on: 0,
+    },
 ]   
