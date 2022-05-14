@@ -372,16 +372,10 @@ document.getElementById("previousPage").addEventListener("click", function() {
 
 // create all games from const
 function ver(d,i){
-    if (document.location.href == d) {
         u(i)
-    } else {
-        let warning = document.createElement("h1")
-        warning.innerHTML = "ATTENTION USER"
-        document.body.appendChild(warning)
-    }
 }
 games.map(function(i){
-    var l = "http://127.0.0.1:5500/public/pages/games.html";ver(l,i)
+    ver(i)
 })
 
 // visit counter with ':'
