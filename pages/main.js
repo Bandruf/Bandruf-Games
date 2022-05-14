@@ -1,5 +1,4 @@
 alert("Ooops! The site is currently undergoing maintenance please join the discord for more info.")
-console.log("The site is down.")
 import{games} from './games.js'
 
 // varibles
@@ -373,8 +372,8 @@ document.getElementById("previousPage").addEventListener("click", function() {
 });
 
 // create all games from const
-function ver(d,i){
-        u(i)
+function ver(i){
+    u(i)
 }
 games.map(function(i){
     ver(i)
@@ -391,3 +390,4 @@ window.addEventListener('keydown', function (e) {
 if (current_page == 1) {
     document.getElementById("pg"+current_page).style.display = "flex"
 }
+
