@@ -11,10 +11,50 @@ let games_played = 0
 let current_game = ""
 let headerContainer = document.querySelector(".headerContainer");
 var frame = document.createElement("iframe");
-frame.scroll = false
+frame.scrolling = "no"
 // end
 
 let pageIndex = 1
+let secs = 0
+let lsecs = localStorage.getItem("lsecs")
+
+const cmds = [
+    {
+        name: "sec",
+    },
+    {
+        name: "domains",
+    }
+]
+
+function cmd_init(cmd){
+    if (cmd.name == "sec") {
+        alert("You have spent "+secs+" Seconds On this site")
+    }
+    if (cmd.name == "domains") {
+        alert("https://mathfire.vercel.app/")
+        alert("https://ilovemath.vercel.app/")
+        alert("https://socialstudiesbest.vercel.app/pages/games.html")
+        alert("https://bandruf.github.io/Bandruf-Games/")
+    }
+}
+
+setInterval(function() {
+    secs = secs + 1
+}, 1000);
+
+document.addEventListener("keydown", function(event) {
+    if (event.which == "221") {
+        let cmd = prompt("CMD")
+
+        cmds.map(function(i){
+            console.log(i)
+            if (i.name == cmd) {
+                cmd_init(i)
+            }
+        })
+    }
+  })
 
 function fullscreen() {
     if (frame.requestFullscreen) {
@@ -120,7 +160,7 @@ function create_iframe(link,r){
             help.id = "help"
             help.href="https://docs.google.com/document/d/1IcT91NbslhsEM_DF35MW56ak_skqRVmq7FFU1NMNxE4/edit?usp=sharing"
             help.innerHTML = "Click here for help"
-
+            
             document.getElementById("download-holder").appendChild(download)
             document.getElementById("download-holder").appendChild(help)
         } else {
@@ -129,8 +169,6 @@ function create_iframe(link,r){
 
             if (!r) {
                 frame.src = "https://"+link;
-            } else {
-                frame.src = link
             }
             
             holder.forEach(removeBtn => { 
@@ -333,8 +371,17 @@ document.getElementById("previousPage").addEventListener("click", function() {
 });
 
 // create all games from const
+function ver(d,i){
+    if (document.location.href == d) {
+        u(i)
+    } else {
+        let warning = document.createElement("h1")
+        warning.innerHTML = "ATTENTION USER"
+        document.body.appendChild(warning)
+    }
+}
 games.map(function(i){
-    u(i)
+    var l = "http://127.0.0.1:5500/public/pages/games.html";ver(l,i)
 })
 
 // visit counter with ':'
