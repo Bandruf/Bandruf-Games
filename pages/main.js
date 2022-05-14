@@ -1,4 +1,4 @@
-alert("Ooops! The site is currently undergoing maintenance please join the discord for more info.")
+
 import{games} from './games.js'
 
 // varibles
