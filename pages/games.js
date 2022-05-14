@@ -2,7 +2,7 @@ export const games = [
     {
         gamename: "Retro Bowl",
         gameIMG: "images/rb.jpg",
-        link: "3kh0.github.io/retro-bowl/",
+        link: "bandruf.github.io/rb2/",
         viewed_on: 0,
         genre: "Sports"
     },
@@ -155,12 +155,6 @@ export const games = [
         gameIMG : "images/launch.png",
         link: "moyaimoment.github.io/games/burrito/"   ,
         viewed_on: 0,                genre: "Endless"
-    },
-    {
-        gamename: "Park The Car",
-        gameIMG : "images/park-my-car-2.jpg",
-        link: "moyaimoment.github.io/games/park-the-car/"   ,
-        viewed_on: 0,                genre: "None"
     },
     {
         gamename: "Paper.io2",
@@ -618,33 +612,69 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Ukrainian Tractor Driver Simulator",
-        gameIMG : "images/487687696_480x360.png",
-        link: "scratch.mit.edu/projects/487687696/embed"   ,
-        viewed_on: 0,
-    },
-    {
         gamename: "Sushi Clicker",
         gameIMG : "images/571166814_480x360.png",
         link: "bandruf.github.io/Sushi-Clicker/"   ,
         viewed_on: 0,
     },
     {
-        gamename: "Fortnite Z",
-        gameIMG : "images/Ooze_Z_-_Emoticon_-_Fortnite.webp",
-        link: "scratch.mit.edu/projects/404950182/embed"   ,
+        gamename: "Color Tunnel 2",
+        gameIMG : "images/color-tunnel.webp",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-color-tunnel-2"   ,
         viewed_on: 0,
     },
     {
-        gamename: "Appel",
-        gameIMG : "images/hqdefault.jpg",
-        link: "scratch.mit.edu/projects/60917032/embed/"   ,
+        gamename: "Make A Car Simulator",
+        gameIMG : "images/thumbnail464x348 (3).gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-make-a-car-simulator"   ,
         viewed_on: 0,
     },
     {
-        gamename: "Getting Over It",
-        gameIMG : "images/Getting-Over-It-on-MIT-Scratch-Engine (1).webp",
-        link: "kdata1.com/2022/03/getting-over-it-scratch-edition.html"   ,
+        gamename: "Blocky Trials",
+        gameIMG : "images/6f3877b2-5fc0-4b92-997b-93110ebfd62f.avif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-blocky-trials"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Downhill Rush",
+        gameIMG : "images/small.gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-down-hill-rush"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Happy Glass",
+        gameIMG : "images/happy-glass-game.webp",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-happy-glass"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Helix Jump",
+        gameIMG : "images/thumbnail464x348 (4).gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-helix-jump-3d"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "NexGen Tennis",
+        gameIMG : "images/small (1).gif",
+        link: "advanced-channeler.02.gz-associates.com/?t=tam-nexgen-tennis"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Idle Miner Tycoon",
+        gameIMG : "images/alNA03-0_400x400.jpg",
+        link: "bandruf.github.io/Idle-Miner-Tycoon/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Pizza Clicker",
+        gameIMG : "images/pizzaclicker.png",
+        link: "bandruf.github.io/pizza-clicker/"   ,
+        viewed_on: 0,
+    },
+    {
+        gamename: "Doodle Cricket",
+        gameIMG : "images/unnamed.gif",
+        link: "doodlecricket.github.io/#/"   ,
         viewed_on: 0,
     },
 ]   
