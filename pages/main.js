@@ -18,6 +18,8 @@ let pageIndex = 1
 let secs = 0
 let lsecs = localStorage.getItem("lsecs")
 
+alert("Ooops! The site is currently undergoing maintenance please join the discord for more info.")
+
 const cmds = [
     {
         name: "sec",
