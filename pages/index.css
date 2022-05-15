@@ -123,6 +123,7 @@
     text-align: center;
     width: 30%;
     height: 10vh;
+    z-index: 3;
     background-color: transparent;
 }
 
@@ -182,7 +183,7 @@ h1{
     display: none;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 40px;
     flex-wrap: wrap;
     display: none;
     z-index: 2;
