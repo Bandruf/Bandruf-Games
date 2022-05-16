@@ -16,33 +16,6 @@ frame.scrolling = "no"
 // end
 
 let pageIndex = 1
-let secs = 0
-let lsecs = localStorage.getItem("lsecs")
-
-const cmds = [
-    {
-        name: "sec",
-    },
-    {
-        name: "domains",
-    }
-]
-
-function cmd_init(cmd){
-    if (cmd.name == "sec") {
-        alert("You have spent "+secs+" Seconds On this site")
-    }
-    if (cmd.name == "domains") {
-        alert("https://mathfire.vercel.app/")
-        alert("https://ilovemath.vercel.app/")
-        alert("https://socialstudiesbest.vercel.app/pages/games.html")
-        alert("https://bandruf.github.io/Bandruf-Games/")
-    }
-}
-
-setInterval(function() {
-    secs = secs + 1
-}, 1000);
 
 document.addEventListener("keydown", function(event) {
     if (event.which == "221") {
