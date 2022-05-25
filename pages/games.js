@@ -680,6 +680,6 @@ export const games = [
     {
         gamename: "Cube Craft",
         gameIMG : "images/clum.jpg",
-        link: "https://graythecatlover.github.io/Cube-engine/",
+        link: "graythecatlover.github.io/Cube-engine/",
         viewed_on: 0,                genre: "none" 
     ]
