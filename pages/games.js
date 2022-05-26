@@ -676,10 +676,4 @@ export const games = [
         gameIMG : "images/unnamed.gif",
         link: "doodlecricket.github.io/#/"   ,
         viewed_on: 0,
-    },
-    {
-        gamename: "Cube Craft",
-        gameIMG : "images/clum.jpg",
-        link: "graythecatlover.github.io/Cube-engine/",
-        viewed_on: 0,                genre: "none" 
-    ]
+   ]
