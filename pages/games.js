@@ -564,9 +564,9 @@ export const games = [
         viewed_on: 0,
     },
     {
-        gamename: "Counter Strike",
+        gamename: "Grays Cube Craft",
         gameIMG : "images/152514-games-news-you-can-now-play-counter-strike-16-in-your-browser-image1-bhd9zn4sdt.jpg",
-        link: "game.play-cs.com/en/de_nuke/27029/sg"   ,
+        link: "https://graythecatlover.github.io/Cube-engine/"   ,
         viewed_on: 0,
     },
     {
