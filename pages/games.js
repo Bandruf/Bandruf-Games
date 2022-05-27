@@ -178,9 +178,8 @@ export const games = [
     {
         gamename: "FNAF-3",
         gameIMG : "images/fnaf3.png",
-        link: "fnaf3.html"   ,
+        link: "fnaf3en.website.yandexcloud.net"   ,
         viewed_on: 0,                genre: "Horror",
-        hardcoded:"true"
     },
     {
         gamename: "FNAF 4",
